@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "..\\..\\..,..\\..\\..,..\\..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "{build.flags.optimize} {build.flags.debug}",
+  "customBuildProperties": "",
+  "fqbn": "STMicroelectronics:stm32:GenF1:pnum=BLUEBUTTON_F103RBT,upload_method=swdMethod,xserial=generic,usb=none,xusb=FS,opt=osstd,dbg=none,rtlib=nano",
+  "hardwareFolders": "C:\\Users\\Marina\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\Marina\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "D:\\Moji projekti\\PCD8544"
+}

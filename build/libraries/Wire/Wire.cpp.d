@@ -1,5 +1,11 @@
-D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o: \
- D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.ino.cpp \
+D:\Moji\ projekti\PCD8544\build\libraries\Wire\Wire.cpp.o: \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\Wire\src\Wire.cpp \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\Wire\src\Wire.h \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Stream.h \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Print.h \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/WString.h \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/avr/pgmspace.h \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Printable.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Arduino.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/wiring.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/avr/dtostrf.h \
@@ -85,26 +91,12 @@ D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o: \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/WSerial.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/HardwareSerial.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Stream.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Print.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/WString.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/avr/pgmspace.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Printable.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/USBSerial.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/VirtIOSerial.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/pins_arduino.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/stm32/PinNames.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/pins_arduino_analog.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/pins_arduino_digital.h \
- D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\SPI\src/SPI.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\SPI\src/utility/spi_com.h \
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\Wire\src\utility/twi.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/stm32/stm32_def.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/stm32/PeripheralPins.h \
- C:\Users\Marina\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Print.h \
- C:\Users\Marina\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
- C:\Users\Marina\Documents\Arduino\libraries\Adafruit_BusIO/Adafruit_I2CDevice.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\Wire\src/Wire.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Stream.h \
- C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\Wire\src/utility/twi.h \
- C:\Users\Marina\Documents\Arduino\libraries\Adafruit_BusIO/Adafruit_SPIDevice.h
+ C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/stm32/PeripheralPins.h

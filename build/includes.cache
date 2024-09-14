@@ -16,6 +16,26 @@
   },
   {
     "Sourcefile": "D:\\Moji projekti\\PCD8544\\build\\sketch\\PCD8544.ino.cpp",
+    "Include": "Adafruit_GFX.h",
+    "Includepath": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_GFX_Library"
+  },
+  {
+    "Sourcefile": "D:\\Moji projekti\\PCD8544\\build\\sketch\\PCD8544.ino.cpp",
+    "Include": "Adafruit_I2CDevice.h",
+    "Includepath": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_BusIO"
+  },
+  {
+    "Sourcefile": "D:\\Moji projekti\\PCD8544\\build\\sketch\\PCD8544.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\Marina\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.7.1\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "D:\\Moji projekti\\PCD8544\\build\\sketch\\PCD8544.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\Moji projekti\\PCD8544\\build\\sketch\\PCD8544.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -36,6 +56,51 @@
   },
   {
     "Sourcefile": "C:\\Users\\Marina\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.7.1\\libraries\\SPI\\src\\utility\\spi_com.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_GFX_Library\\Adafruit_GFX.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_GFX_Library\\Adafruit_GrayOLED.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_GFX_Library\\Adafruit_SPITFT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_GFX_Library\\glcdfont.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_BusIO\\Adafruit_BusIO_Register.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_BusIO\\Adafruit_I2CDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\Documents\\Arduino\\libraries\\Adafruit_BusIO\\Adafruit_SPIDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.7.1\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Marina\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.7.1\\libraries\\Wire\\src\\utility\\twi.c",
     "Include": "",
     "Includepath": null
   },

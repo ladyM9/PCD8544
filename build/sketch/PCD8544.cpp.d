@@ -1,5 +1,6 @@
-D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o: \
- D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.ino.cpp \
+D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.cpp.o: \
+ D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.cpp \
+ D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/Arduino.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/wiring.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/avr/dtostrf.h \
@@ -95,7 +96,6 @@ D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o: \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/stm32/PinNames.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/pins_arduino_analog.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/pins_arduino_digital.h \
- D:\Moji\ projekti\PCD8544\build\sketch\PCD8544.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\SPI\src/SPI.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\libraries\SPI\src/utility/spi_com.h \
  C:\Users\Marina\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\cores\arduino/stm32/stm32_def.h \

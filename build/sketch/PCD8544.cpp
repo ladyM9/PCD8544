@@ -1,3 +1,4 @@
+#line 1 "D:\\Moji projekti\\PCD8544\\PCD8544.cpp"
 #include "PCD8544.h"
 
 PCD8544_LCD::PCD8544_LCD()

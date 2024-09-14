@@ -12,5 +12,6 @@ void setup()
 
 void loop()
 {
-	
+	display_lcd
+	display_lcd.print("Hello");
 }

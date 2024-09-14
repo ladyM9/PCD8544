@@ -9,10 +9,13 @@
 
 //registers for LCD
 
-#define PCD8544_LCD_CMD_BS 0b00010000
+#define PCD8544_LCD_CMD_FS1 0b00100000
+#define PCD8544_LCD_CMD_FS2 0b00100001
+#define PCD8544_LCD_CMD_WD 0b10101010
+#define PCD8544_LCD_CMD_BS 0b00000011
 #define PCD8544_LCD_CMD_TEMPC 0b00000100
-#define PCD8544_LCD_CMD_VOP 0b10000000
-#define PCD8544_LCD_CMD_DISPC 0b00001000
+#define PCD8544_LCD_CMD_VOP 0b10010000
+#define PCD8544_LCD_CMD_DISPC 0b00001001
 #define PCD8544_LCD_CMD_SETY 0b01000000
 #define PCD8544_LCD_CMD_SETX 0b10000000
 
@@ -34,15 +37,7 @@ class PCD8544_LCD
     void display(); //method for print anything on LCD
 
     private:
-    void initLCD();
-    void resetLCD();
-    void functionsetLCD();
-    void DisplayControl();
-    void setY();
-    void setX();
-    void Temp();
-    void Serial_initialize();
-    void spiSend();
+ 
     SPISettings _setLCD;
 
     uint8_t _lcdFramebuffer[columns*rows/8];

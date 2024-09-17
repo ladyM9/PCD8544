@@ -1,8 +1,0 @@
-#line 1 "D:\\Moji projekti\\PCD8544\\.vscode\\arduino.json"
-{
-    "sketch": "PCD8544.ino",
-    "configuration": "pnum=BLUEBUTTON_F103RBT,upload_method=swdMethod,xserial=generic,usb=none,xusb=FS,opt=osstd,dbg=none,rtlib=nano",
-    "board": "STMicroelectronics:stm32:GenF1",
-    "port": "COM8",
-    "output": "build"
-}

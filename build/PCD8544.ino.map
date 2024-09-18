@@ -1,7 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
-                              D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o (Print::write(unsigned char const*, unsigned int))
+                              D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o (Print::write(unsigned char const*, unsigned int))
 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
                               D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o (Stream::readBytes(char*, unsigned int))
 D:\Moji projekti\PCD8544\build\core\core.a(WString.cpp.o)
@@ -244,6 +244,8 @@ Discarded input sections
  .ARM.exidx     0x0000000000000000       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1b c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .group         0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+ .group         0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
  .data          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
  .bss           0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
@@ -324,29 +326,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .data          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .bss           0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX9writeLineEsssst
-                0x0000000000000000       0xbc D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX10startWriteEv
-                0x0000000000000000        0x2 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX10writePixelEsst
-                0x0000000000000000        0xc D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX14writeFastVLineEssst
-                0x0000000000000000       0x12 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX14writeFastHLineEssst
-                0x0000000000000000       0x12 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX13writeFillRectEsssst
-                0x0000000000000000       0x18 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX13drawFastVLineEssst
-                0x0000000000000000       0x3e D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX13drawFastHLineEssst
-                0x0000000000000000       0x3a D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX8fillRectEsssst
-                0x0000000000000000       0x46 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX10fillScreenEt
-                0x0000000000000000       0x1c D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX8drawRectEsssst
-                0x0000000000000000       0x80 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX13invertDisplayEb
+ .text._ZN5Print17availableForWriteEv
+                0x0000000000000000        0x4 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+ .text._ZN5Print5flushEv
                 0x0000000000000000        0x2 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN10GFXcanvas19drawPixelEsst
                 0x0000000000000000       0x86 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
@@ -360,13 +342,7 @@ Discarded input sections
                 0x0000000000000000       0x16 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN11GFXcanvas1610fillScreenEt
                 0x0000000000000000       0x3c D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX8drawLineEsssst
-                0x0000000000000000       0x82 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX11setRotationEh
-                0x0000000000000000       0x20 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._gettimeofday
-                0x0000000000000000       0x2c D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFXC2Ess
                 0x0000000000000000       0x2c D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN12Adafruit_GFX10drawCircleEssst
                 0x0000000000000000      0x188 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
@@ -410,14 +386,8 @@ Discarded input sections
                 0x0000000000000000       0xaa D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN12Adafruit_GFX13drawRGBBitmapEssPtPhss
                 0x0000000000000000       0xaa D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX8drawCharEsshtthh
-                0x0000000000000000      0x2ac D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN12Adafruit_GFX8drawCharEsshtth
                 0x0000000000000000       0x1e D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX5writeEh
-                0x0000000000000000      0x102 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .text._ZN12Adafruit_GFX11setTextSizeEh
-                0x0000000000000000        0xc D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN12Adafruit_GFX11setTextSizeEhh
                 0x0000000000000000       0x12 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN12Adafruit_GFX7setFontEPK7GFXfont
@@ -498,16 +468,12 @@ Discarded input sections
                 0x0000000000000000       0xa0 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .text._ZN11GFXcanvas1613drawFastHLineEssst
                 0x0000000000000000       0xa2 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .rodata._ZTV12Adafruit_GFX
-                0x0000000000000000       0x58 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .rodata._ZTV10GFXcanvas1
                 0x0000000000000000       0x58 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .rodata._ZTV10GFXcanvas8
                 0x0000000000000000       0x58 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .rodata._ZTV11GFXcanvas16
                 0x0000000000000000       0x58 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
- .rodata._ZL4font
-                0x0000000000000000      0x500 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .group         0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
  .group         0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
@@ -3191,18 +3157,12 @@ Discarded input sections
                 0x0000000000000000        0x4 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .text._ZN5Print5flushEv
                 0x0000000000000000        0x2 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
- .text._ZN5Print5writeEPKhj
-                0x0000000000000000       0x2c D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .text._gettimeofday
                 0x0000000000000000       0x2c D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
- .text._ZN5Print5writeEPKc
-                0x0000000000000000       0x20 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .text._ZN5Print5printEPK19__FlashStringHelper
                 0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .text._ZN5Print5printERK6String
                 0x0000000000000000        0xa D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
- .text._ZN5Print5printEPKc
-                0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .text._ZN5Print5printEc
                 0x0000000000000000        0x6 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .text._ZN5Print5printERK9Printable
@@ -3278,9 +3238,6 @@ Discarded input sections
                 0x0000000000000000       0x1c D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .rodata._ZTV5Print
                 0x0000000000000000       0x18 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
- .comment       0x0000000000000000       0x3a D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
- .ARM.attributes
-                0x0000000000000000       0x2d D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .group         0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
  .group         0x0000000000000000        0x8 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
@@ -3555,7 +3512,6 @@ Discarded input sections
  .text._gettimeofday
                 0x0000000000000000       0x2c D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
  .text.micros   0x0000000000000000        0x4 D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
- .text.delay    0x0000000000000000       0x1c D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
  .data          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
  .bss           0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
@@ -3565,10 +3521,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
  .data          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
  .bss           0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
- .text.__empty  0x0000000000000000        0x2 D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
- .comment       0x0000000000000000       0x3a D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
- .ARM.attributes
-                0x0000000000000000       0x2d D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
  .text          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
  .data          0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
  .bss           0x0000000000000000        0x0 D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
@@ -4019,11 +3971,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
  .data          0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
  .bss           0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
- .text          0x0000000000000000       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-strlen.o)
  .data          0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-strlen.o)
  .bss           0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-strlen.o)
- .ARM.attributes
-                0x0000000000000000       0x17 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-strlen.o)
  .text          0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libm_a-s_nan.o)
  .data          0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libm_a-s_nan.o)
  .bss           0x0000000000000000        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libm_a-s_nan.o)
@@ -4988,772 +4937,866 @@ LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/x
                 0x0000000008000000                g_pfnVectors
                 0x000000000800010c                . = ALIGN (0x4)
 
-.text           0x000000000800010c     0x3970
+.text           0x000000000800010c     0x4188
                 0x000000000800010c                . = ALIGN (0x4)
  *(.text)
+ .text          0x000000000800010c       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-strlen.o)
+                0x000000000800010c                strlen
  *(.text*)
  .text.__do_global_dtors_aux
-                0x000000000800010c       0x24 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
+                0x000000000800011c       0x24 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
  .text.frame_dummy
-                0x0000000008000130       0x1c c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
- .text._ZN11PCD8544_LCDC2Ev
-                0x000000000800014c       0x18 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
-                0x000000000800014c                PCD8544_LCD::PCD8544_LCD()
-                0x000000000800014c                PCD8544_LCD::PCD8544_LCD()
- .text._ZN11PCD8544_LCD5beginEiii
-                0x0000000008000164       0xa4 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
-                0x0000000008000164                PCD8544_LCD::begin(int, int, int)
- .text.setup    0x0000000008000208       0x10 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
-                0x0000000008000208                setup
- .text.loop     0x0000000008000218        0x2 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
-                0x0000000008000218                loop
- *fill*         0x000000000800021a        0x2 
- .text.startup._GLOBAL__sub_I_display_lcd
-                0x000000000800021c        0xc D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
- .text._ZN8SPIClassC2Ev
-                0x0000000008000228       0x3c D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
-                0x0000000008000228                SPIClass::SPIClass()
-                0x0000000008000228                SPIClass::SPIClass()
- .text.startup._GLOBAL__sub_I_SPI
-                0x0000000008000264        0xc D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
+                0x0000000008000140       0x1c c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
  .text._ZN5Print17availableForWriteEv
-                0x0000000008000270        0x4 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
-                0x0000000008000270                Print::availableForWrite()
+                0x000000000800015c        0x4 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x000000000800015c                Print::availableForWrite()
  .text._ZN5Print5flushEv
-                0x0000000008000274        0x2 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
-                0x0000000008000274                Print::flush()
+                0x0000000008000160        0x2 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x0000000008000160                Print::flush()
+ .text._ZN11PCD8544_LCD9drawPixelEsst
+                0x0000000008000162        0x2 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x0000000008000162                PCD8544_LCD::drawPixel(short, short, unsigned short)
+ .text._ZN11PCD8544_LCDC2Ev
+                0x0000000008000164       0x30 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x0000000008000164                PCD8544_LCD::PCD8544_LCD()
+                0x0000000008000164                PCD8544_LCD::PCD8544_LCD()
+ .text._ZN11PCD8544_LCD8spi_sendEPh
+                0x0000000008000194        0xa D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x0000000008000194                PCD8544_LCD::spi_send(unsigned char*)
+ .text._ZN11PCD8544_LCD7displayEv
+                0x000000000800019e       0x48 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x000000000800019e                PCD8544_LCD::display()
+ .text._ZN11PCD8544_LCD8LCDresetEv
+                0x00000000080001e6       0x28 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x00000000080001e6                PCD8544_LCD::LCDreset()
+ *fill*         0x000000000800020e        0x2 
+ .text._ZN11PCD8544_LCD5beginEiii
+                0x0000000008000210       0x84 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x0000000008000210                PCD8544_LCD::begin(int, int, int)
+ .text.setup    0x0000000008000294       0x48 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+                0x0000000008000294                setup
+ .text.loop     0x00000000080002dc        0x2 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+                0x00000000080002dc                loop
+ *fill*         0x00000000080002de        0x2 
+ .text.startup._GLOBAL__sub_I_display_lcd
+                0x00000000080002e0        0xc D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+ .text._ZN8SPIClassC2Ev
+                0x00000000080002ec       0x3c D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
+                0x00000000080002ec                SPIClass::SPIClass()
+                0x00000000080002ec                SPIClass::SPIClass()
+ .text.startup._GLOBAL__sub_I_SPI
+                0x0000000008000328        0xc D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
+ .text._ZN12Adafruit_GFX9writeLineEsssst
+                0x0000000008000334       0xbc D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000334                Adafruit_GFX::writeLine(short, short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX10startWriteEv
+                0x00000000080003f0        0x2 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x00000000080003f0                Adafruit_GFX::startWrite()
+                0x00000000080003f0                Adafruit_GFX::endWrite()
+ .text._ZN12Adafruit_GFX10writePixelEsst
+                0x00000000080003f2        0xc D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x00000000080003f2                Adafruit_GFX::writePixel(short, short, unsigned short)
+ .text._ZN12Adafruit_GFX14writeFastVLineEssst
+                0x00000000080003fe       0x12 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x00000000080003fe                Adafruit_GFX::writeFastVLine(short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX14writeFastHLineEssst
+                0x0000000008000410       0x12 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000410                Adafruit_GFX::writeFastHLine(short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX13writeFillRectEsssst
+                0x0000000008000422       0x18 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000422                Adafruit_GFX::writeFillRect(short, short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX13drawFastVLineEssst
+                0x000000000800043a       0x3e D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x000000000800043a                Adafruit_GFX::drawFastVLine(short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX13drawFastHLineEssst
+                0x0000000008000478       0x3a D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000478                Adafruit_GFX::drawFastHLine(short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX8fillRectEsssst
+                0x00000000080004b2       0x46 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x00000000080004b2                Adafruit_GFX::fillRect(short, short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX10fillScreenEt
+                0x00000000080004f8       0x1c D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x00000000080004f8                Adafruit_GFX::fillScreen(unsigned short)
+ .text._ZN12Adafruit_GFX8drawRectEsssst
+                0x0000000008000514       0x80 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000514                Adafruit_GFX::drawRect(short, short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX13invertDisplayEb
+                0x0000000008000594        0x2 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000594                Adafruit_GFX::invertDisplay(bool)
+ .text._ZN12Adafruit_GFX8drawLineEsssst
+                0x0000000008000596       0x82 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000596                Adafruit_GFX::drawLine(short, short, short, short, unsigned short)
+ .text._ZN12Adafruit_GFX11setRotationEh
+                0x0000000008000618       0x20 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000618                Adafruit_GFX::setRotation(unsigned char)
+ .text._ZN12Adafruit_GFXC2Ess
+                0x0000000008000638       0x2c D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000638                Adafruit_GFX::Adafruit_GFX(short, short)
+                0x0000000008000638                Adafruit_GFX::Adafruit_GFX(short, short)
+ .text._ZN12Adafruit_GFX8drawCharEsshtthh
+                0x0000000008000664      0x2ac D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000664                Adafruit_GFX::drawChar(short, short, unsigned char, unsigned short, unsigned short, unsigned char, unsigned char)
+ .text._ZN12Adafruit_GFX5writeEh
+                0x0000000008000910      0x102 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000910                Adafruit_GFX::write(unsigned char)
+ .text._ZN12Adafruit_GFX11setTextSizeEh
+                0x0000000008000a12        0xc D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x0000000008000a12                Adafruit_GFX::setTextSize(unsigned char)
  .text._ZN7TwoWire9availableEv
-                0x0000000008000276        0x8 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x0000000008000276                TwoWire::available()
+                0x0000000008000a1e        0x8 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000a1e                TwoWire::available()
  .text._ZN7TwoWire4readEv
-                0x000000000800027e       0x1a D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x000000000800027e                TwoWire::read()
+                0x0000000008000a26       0x1a D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000a26                TwoWire::read()
  .text._ZN7TwoWire4peekEv
-                0x0000000008000298       0x12 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x0000000008000298                TwoWire::peek()
+                0x0000000008000a40       0x12 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000a40                TwoWire::peek()
  .text._ZNSt14_Function_baseD2Ev
-                0x00000000080002aa       0x12 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080002aa                std::_Function_base::~_Function_base()
-                0x00000000080002aa                std::_Function_base::~_Function_base()
+                0x0000000008000a52       0x12 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000a52                std::_Function_base::~_Function_base()
+                0x0000000008000a52                std::_Function_base::~_Function_base()
  .text._ZN7TwoWire3endEv
-                0x00000000080002bc       0x28 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080002bc                TwoWire::end()
+                0x0000000008000a64       0x28 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000a64                TwoWire::end()
  .text._ZN7TwoWireD2Ev
-                0x00000000080002e4       0x28 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080002e4                TwoWire::~TwoWire()
-                0x00000000080002e4                TwoWire::~TwoWire()
+                0x0000000008000a8c       0x28 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000a8c                TwoWire::~TwoWire()
+                0x0000000008000a8c                TwoWire::~TwoWire()
  .text._ZN7TwoWire16allocateTxBufferEj
-                0x000000000800030c       0x32 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x000000000800030c                TwoWire::allocateTxBuffer(unsigned int)
+                0x0000000008000ab4       0x32 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000ab4                TwoWire::allocateTxBuffer(unsigned int)
  .text._ZN7TwoWire5writeEh
-                0x000000000800033e       0x42 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x000000000800033e                TwoWire::write(unsigned char)
+                0x0000000008000ae6       0x42 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000ae6                TwoWire::write(unsigned char)
  .text._ZN7TwoWire5writeEPKhj
-                0x0000000008000380       0x42 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x0000000008000380                TwoWire::write(unsigned char const*, unsigned int)
+                0x0000000008000b28       0x42 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000b28                TwoWire::write(unsigned char const*, unsigned int)
  .text._ZN7TwoWire13resetTxBufferEv
-                0x00000000080003c2       0x10 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080003c2                TwoWire::resetTxBuffer()
+                0x0000000008000b6a       0x10 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000b6a                TwoWire::resetTxBuffer()
  .text._ZN7TwoWire5flushEv
-                0x00000000080003d2       0x20 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080003d2                TwoWire::flush()
+                0x0000000008000b7a       0x20 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000b7a                TwoWire::flush()
  .text._ZNSt8functionIFviEEC2Ev
-                0x00000000080003f2        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080003f2                std::function<void (int)>::function()
-                0x00000000080003f2                std::function<void (int)>::function()
+                0x0000000008000b9a        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000b9a                std::function<void (int)>::function()
+                0x0000000008000b9a                std::function<void (int)>::function()
  .text._ZNSt8functionIFvvEEC2Ev
-                0x00000000080003fe        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x00000000080003fe                std::function<void ()>::function()
-                0x00000000080003fe                std::function<void ()>::function()
- *fill*         0x000000000800040a        0x2 
+                0x0000000008000ba6        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000ba6                std::function<void ()>::function()
+                0x0000000008000ba6                std::function<void ()>::function()
+ *fill*         0x0000000008000bb2        0x2 
  .text._ZN7TwoWireC2Ev
-                0x000000000800040c       0x48 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x000000000800040c                TwoWire::TwoWire()
-                0x000000000800040c                TwoWire::TwoWire()
+                0x0000000008000bb4       0x48 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000bb4                TwoWire::TwoWire()
+                0x0000000008000bb4                TwoWire::TwoWire()
  .text.startup._GLOBAL__sub_I__ZN7TwoWireC2Ev
-                0x0000000008000454        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000bfc        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
  .text.exit._GLOBAL__sub_D__ZN7TwoWireC2Ev
-                0x0000000008000460        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000008000c08        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
  .text.i2c_deinit
-                0x000000000800046c       0x1e D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x000000000800046c                i2c_deinit
+                0x0000000008000c14       0x1e D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000c14                i2c_deinit
  .text.i2c_slave_write_IT
-                0x000000000800048a       0x34 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x000000000800048a                i2c_slave_write_IT
+                0x0000000008000c32       0x34 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000c32                i2c_slave_write_IT
  .text.HAL_I2C_AddrCallback
-                0x00000000080004be       0x68 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x00000000080004be                HAL_I2C_AddrCallback
+                0x0000000008000c66       0x68 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000c66                HAL_I2C_AddrCallback
  .text.HAL_I2C_ListenCpltCallback
-                0x0000000008000526       0x2a D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x0000000008000526                HAL_I2C_ListenCpltCallback
+                0x0000000008000cce       0x2a D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000cce                HAL_I2C_ListenCpltCallback
  .text.HAL_I2C_SlaveRxCpltCallback
-                0x0000000008000550       0x24 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x0000000008000550                HAL_I2C_SlaveRxCpltCallback
+                0x0000000008000cf8       0x24 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000cf8                HAL_I2C_SlaveRxCpltCallback
  .text.HAL_I2C_SlaveTxCpltCallback
-                0x0000000008000574        0x8 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x0000000008000574                HAL_I2C_SlaveTxCpltCallback
+                0x0000000008000d1c        0x8 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000d1c                HAL_I2C_SlaveTxCpltCallback
  .text.HAL_I2C_ErrorCallback
-                0x000000000800057c        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x000000000800057c                HAL_I2C_ErrorCallback
+                0x0000000008000d24        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000d24                HAL_I2C_ErrorCallback
  .text.I2C1_EV_IRQHandler
-                0x0000000008000588        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x0000000008000588                I2C1_EV_IRQHandler
+                0x0000000008000d30        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000d30                I2C1_EV_IRQHandler
  .text.I2C1_ER_IRQHandler
-                0x0000000008000594        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x0000000008000594                I2C1_ER_IRQHandler
+                0x0000000008000d3c        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000d3c                I2C1_ER_IRQHandler
  .text.I2C2_EV_IRQHandler
-                0x00000000080005a0        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x00000000080005a0                I2C2_EV_IRQHandler
+                0x0000000008000d48        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000d48                I2C2_EV_IRQHandler
  .text.I2C2_ER_IRQHandler
-                0x00000000080005ac        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
-                0x00000000080005ac                I2C2_ER_IRQHandler
+                0x0000000008000d54        0xc D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+                0x0000000008000d54                I2C2_ER_IRQHandler
  .text.HAL_MspInit
-                0x00000000080005b8        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
-                0x00000000080005b8                HAL_MspInit
- *fill*         0x00000000080005ba        0x2 
+                0x0000000008000d60        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
+                0x0000000008000d60                HAL_MspInit
+ *fill*         0x0000000008000d62        0x2 
  .text.HAL_InitTick
-                0x00000000080005bc       0x48 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
-                0x00000000080005bc                HAL_InitTick
+                0x0000000008000d64       0x48 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
+                0x0000000008000d64                HAL_InitTick
  .text.HAL_Init
-                0x0000000008000604       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
-                0x0000000008000604                HAL_Init
+                0x0000000008000dac       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
+                0x0000000008000dac                HAL_Init
  .text.HAL_IncTick
-                0x0000000008000628       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
-                0x0000000008000628                HAL_IncTick
+                0x0000000008000dd0       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
+                0x0000000008000dd0                HAL_IncTick
  .text.HAL_GetTick
-                0x0000000008000640        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
-                0x0000000008000640                HAL_GetTick
+                0x0000000008000de8        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
+                0x0000000008000de8                HAL_GetTick
  .text.HAL_NVIC_SetPriorityGrouping
-                0x000000000800064c       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x000000000800064c                HAL_NVIC_SetPriorityGrouping
+                0x0000000008000df4       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000df4                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0000000008000670       0x60 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x0000000008000670                HAL_NVIC_SetPriority
+                0x0000000008000e18       0x60 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000e18                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x00000000080006d0       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x00000000080006d0                HAL_NVIC_EnableIRQ
+                0x0000000008000e78       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000e78                HAL_NVIC_EnableIRQ
  .text.HAL_NVIC_DisableIRQ
-                0x00000000080006ec       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x00000000080006ec                HAL_NVIC_DisableIRQ
+                0x0000000008000e94       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000e94                HAL_NVIC_DisableIRQ
  .text.HAL_SYSTICK_Config
-                0x0000000008000710       0x28 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x0000000008000710                HAL_SYSTICK_Config
+                0x0000000008000eb8       0x28 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000eb8                HAL_SYSTICK_Config
  .text.HAL_NVIC_ClearPendingIRQ
-                0x0000000008000738       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x0000000008000738                HAL_NVIC_ClearPendingIRQ
+                0x0000000008000ee0       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000ee0                HAL_NVIC_ClearPendingIRQ
  .text.HAL_SYSTICK_Callback
-                0x0000000008000754        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x0000000008000754                HAL_SYSTICK_Callback
+                0x0000000008000efc        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000efc                HAL_SYSTICK_Callback
  .text.HAL_SYSTICK_IRQHandler
-                0x0000000008000756        0x8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
-                0x0000000008000756                HAL_SYSTICK_IRQHandler
+                0x0000000008000efe        0x8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_cortex.c.o
+                0x0000000008000efe                HAL_SYSTICK_IRQHandler
  .text.HAL_CRC_MspInit
-                0x000000000800075e        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_crc.c.o
-                0x000000000800075e                HAL_CRC_MspInit
+                0x0000000008000f06        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_crc.c.o
+                0x0000000008000f06                HAL_CRC_MspInit
  .text.HAL_CRC_Init
-                0x0000000008000760       0x20 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_crc.c.o
-                0x0000000008000760                HAL_CRC_Init
+                0x0000000008000f08       0x20 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_crc.c.o
+                0x0000000008000f08                HAL_CRC_Init
  .text.HAL_DMA_Abort
-                0x0000000008000780       0x3e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_dma.c.o
-                0x0000000008000780                HAL_DMA_Abort
- *fill*         0x00000000080007be        0x2 
+                0x0000000008000f28       0x3e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_dma.c.o
+                0x0000000008000f28                HAL_DMA_Abort
+ *fill*         0x0000000008000f66        0x2 
  .text.HAL_DMA_Abort_IT
-                0x00000000080007c0       0x8c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_dma.c.o
-                0x00000000080007c0                HAL_DMA_Abort_IT
+                0x0000000008000f68       0x8c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_dma.c.o
+                0x0000000008000f68                HAL_DMA_Abort_IT
  .text.HAL_DMA_GetState
-                0x000000000800084c        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_dma.c.o
-                0x000000000800084c                HAL_DMA_GetState
- *fill*         0x0000000008000852        0x2 
+                0x0000000008000ff4        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_dma.c.o
+                0x0000000008000ff4                HAL_DMA_GetState
+ *fill*         0x0000000008000ffa        0x2 
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x0000000008000854       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_gpio.c.o
-                0x0000000008000854                HAL_GPIO_EXTI_IRQHandler
+                0x0000000008000ffc       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_gpio.c.o
+                0x0000000008000ffc                HAL_GPIO_EXTI_IRQHandler
  .text.HAL_I2C_MspDeInit
-                0x000000000800086c        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x000000000800086c                HAL_I2C_MspDeInit
+                0x0000000008001014        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001014                HAL_I2C_MspDeInit
  .text.HAL_I2C_DeInit
-                0x000000000800086e       0x32 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x000000000800086e                HAL_I2C_DeInit
+                0x0000000008001016       0x32 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001016                HAL_I2C_DeInit
  .text.HAL_I2C_Slave_Seq_Transmit_IT
-                0x00000000080008a0       0x76 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x00000000080008a0                HAL_I2C_Slave_Seq_Transmit_IT
+                0x0000000008001048       0x76 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001048                HAL_I2C_Slave_Seq_Transmit_IT
  .text.HAL_I2C_Slave_Seq_Receive_IT
-                0x0000000008000916       0x76 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x0000000008000916                HAL_I2C_Slave_Seq_Receive_IT
+                0x00000000080010be       0x76 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x00000000080010be                HAL_I2C_Slave_Seq_Receive_IT
  .text.HAL_I2C_EnableListen_IT
-                0x000000000800098c       0x36 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x000000000800098c                HAL_I2C_EnableListen_IT
+                0x0000000008001134       0x36 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001134                HAL_I2C_EnableListen_IT
  .text.HAL_I2C_MasterTxCpltCallback
-                0x00000000080009c2        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x00000000080009c2                HAL_I2C_MasterTxCpltCallback
+                0x000000000800116a        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x000000000800116a                HAL_I2C_MasterTxCpltCallback
  .text.HAL_I2C_MasterRxCpltCallback
-                0x00000000080009c4        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x00000000080009c4                HAL_I2C_MasterRxCpltCallback
+                0x000000000800116c        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x000000000800116c                HAL_I2C_MasterRxCpltCallback
  .text.HAL_I2C_MemTxCpltCallback
-                0x00000000080009c6        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x00000000080009c6                HAL_I2C_MemTxCpltCallback
+                0x000000000800116e        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x000000000800116e                HAL_I2C_MemTxCpltCallback
  .text.I2C_MemoryTransmit_TXE_BTF
-                0x00000000080009c8       0xb6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001170       0xb6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
  .text.HAL_I2C_MemRxCpltCallback
-                0x0000000008000a7e        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x0000000008000a7e                HAL_I2C_MemRxCpltCallback
+                0x0000000008001226        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001226                HAL_I2C_MemRxCpltCallback
  .text.HAL_I2C_AbortCpltCallback
-                0x0000000008000a80        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x0000000008000a80                HAL_I2C_AbortCpltCallback
- *fill*         0x0000000008000a82        0x2 
+                0x0000000008001228        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001228                HAL_I2C_AbortCpltCallback
+ *fill*         0x000000000800122a        0x2 
  .text.I2C_DMAAbort
-                0x0000000008000a84       0xe4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x000000000800122c       0xe4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
  .text.I2C_ITError
-                0x0000000008000b68      0x15c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001310      0x15c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
  .text.HAL_I2C_EV_IRQHandler
-                0x0000000008000cc4      0x8b8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x0000000008000cc4                HAL_I2C_EV_IRQHandler
+                0x000000000800146c      0x8b8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x000000000800146c                HAL_I2C_EV_IRQHandler
  .text.HAL_I2C_ER_IRQHandler
-                0x000000000800157c      0x160 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
-                0x000000000800157c                HAL_I2C_ER_IRQHandler
+                0x0000000008001d24      0x160 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_i2c.c.o
+                0x0000000008001d24                HAL_I2C_ER_IRQHandler
  .text.HAL_RCC_OscConfig
-                0x00000000080016dc      0x338 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
-                0x00000000080016dc                HAL_RCC_OscConfig
+                0x0000000008001e84      0x338 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
+                0x0000000008001e84                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008001a14       0x4c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
-                0x0000000008001a14                HAL_RCC_GetSysClockFreq
+                0x00000000080021bc       0x4c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
+                0x00000000080021bc                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0000000008001a60      0x138 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
-                0x0000000008001a60                HAL_RCC_ClockConfig
+                0x0000000008002208      0x138 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
+                0x0000000008002208                HAL_RCC_ClockConfig
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x0000000008001b98       0xf4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc_ex.c.o
-                0x0000000008001b98                HAL_RCCEx_PeriphCLKConfig
+                0x0000000008002340       0xf4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc_ex.c.o
+                0x0000000008002340                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x0000000008001c8c        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
-                0x0000000008001c8c                HAL_TIM_PWM_PulseFinishedCallback
+                0x0000000008002434        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
+                0x0000000008002434                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x0000000008001c8e        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
-                0x0000000008001c8e                HAL_TIM_TriggerCallback
+                0x0000000008002436        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
+                0x0000000008002436                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x0000000008001c90      0x144 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
-                0x0000000008001c90                HAL_TIM_IRQHandler
+                0x0000000008002438      0x144 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
+                0x0000000008002438                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x0000000008001dd4       0x54 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
-                0x0000000008001dd4                TIM_Base_SetConfig
+                0x000000000800257c       0x54 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
+                0x000000000800257c                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x0000000008001e28       0x58 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
-                0x0000000008001e28                HAL_TIM_Base_Init
+                0x00000000080025d0       0x58 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim.c.o
+                0x00000000080025d0                HAL_TIM_Base_Init
  .text.HAL_TIMEx_CommutCallback
-                0x0000000008001e80        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim_ex.c.o
-                0x0000000008001e80                HAL_TIMEx_CommutCallback
+                0x0000000008002628        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim_ex.c.o
+                0x0000000008002628                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x0000000008001e82        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim_ex.c.o
-                0x0000000008001e82                HAL_TIMEx_BreakCallback
+                0x000000000800262a        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_tim_ex.c.o
+                0x000000000800262a                HAL_TIMEx_BreakCallback
  .text.UART_EndRxTransfer
-                0x0000000008001e84       0x5c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x000000000800262c       0x5c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
  .text.HAL_UART_Transmit_IT
-                0x0000000008001ee0       0x32 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x0000000008001ee0                HAL_UART_Transmit_IT
+                0x0000000008002688       0x32 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002688                HAL_UART_Transmit_IT
  .text.UART_DMAAbortOnError
-                0x0000000008001f12       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x00000000080026ba       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
  .text.HAL_UARTEx_RxEventCallback
-                0x0000000008001f22        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x0000000008001f22                HAL_UARTEx_RxEventCallback
+                0x00000000080026ca        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x00000000080026ca                HAL_UARTEx_RxEventCallback
  .text.UART_Receive_IT.isra.0
-                0x0000000008001f24       0xb6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
- *fill*         0x0000000008001fda        0x2 
+                0x00000000080026cc       0xb6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+ *fill*         0x0000000008002782        0x2 
  .text.HAL_UART_IRQHandler
-                0x0000000008001fdc      0x2d8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x0000000008001fdc                HAL_UART_IRQHandler
+                0x0000000008002784      0x2d8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002784                HAL_UART_IRQHandler
  .text.HAL_HalfDuplex_EnableTransmitter
-                0x00000000080022b4       0x30 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x00000000080022b4                HAL_HalfDuplex_EnableTransmitter
+                0x0000000008002a5c       0x30 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002a5c                HAL_HalfDuplex_EnableTransmitter
  .text.HAL_HalfDuplex_EnableReceiver
-                0x00000000080022e4       0x30 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x00000000080022e4                HAL_HalfDuplex_EnableReceiver
+                0x0000000008002a8c       0x30 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002a8c                HAL_HalfDuplex_EnableReceiver
  .text.HAL_UART_GetState
-                0x0000000008002314        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x0000000008002314                HAL_UART_GetState
+                0x0000000008002abc        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002abc                HAL_UART_GetState
  .text.UART_Start_Receive_IT
-                0x0000000008002320       0x32 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x0000000008002320                UART_Start_Receive_IT
+                0x0000000008002ac8       0x32 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002ac8                UART_Start_Receive_IT
  .text.HAL_UART_Receive_IT
-                0x0000000008002352       0x22 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
-                0x0000000008002352                HAL_UART_Receive_IT
+                0x0000000008002afa       0x22 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_uart.c.o
+                0x0000000008002afa                HAL_UART_Receive_IT
  .text._ZNSt8functionIFvvEEaSEDn.isra.0
-                0x0000000008002374       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
- *fill*         0x000000000800238a        0x2 
+                0x0000000008002b1c       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+ *fill*         0x0000000008002b32        0x2 
  .text._Z15get_timer_indexP11TIM_TypeDef
-                0x000000000800238c       0x38 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x000000000800238c                get_timer_index(TIM_TypeDef*)
+                0x0000000008002b34       0x38 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002b34                get_timer_index(TIM_TypeDef*)
  .text._ZN13HardwareTimerD2Ev
-                0x00000000080023c4       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x00000000080023c4                HardwareTimer::~HardwareTimer()
-                0x00000000080023c4                HardwareTimer::~HardwareTimer()
+                0x0000000008002b6c       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002b6c                HardwareTimer::~HardwareTimer()
+                0x0000000008002b6c                HardwareTimer::~HardwareTimer()
  .text._ZN13HardwareTimer5setupEP11TIM_TypeDef
-                0x0000000008002404       0x90 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x0000000008002404                HardwareTimer::setup(TIM_TypeDef*)
+                0x0000000008002bac       0x90 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002bac                HardwareTimer::setup(TIM_TypeDef*)
  .text.TIM1_UP_IRQHandler
-                0x0000000008002494       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x0000000008002494                TIM1_UP_IRQHandler
+                0x0000000008002c3c       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002c3c                TIM1_UP_IRQHandler
  .text.TIM1_CC_IRQHandler
-                0x00000000080024a8        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x00000000080024a8                TIM1_CC_IRQHandler
+                0x0000000008002c50        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002c50                TIM1_CC_IRQHandler
  .text.TIM2_IRQHandler
-                0x00000000080024ac       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x00000000080024ac                TIM2_IRQHandler
+                0x0000000008002c54       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002c54                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x00000000080024c0       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x00000000080024c0                TIM3_IRQHandler
+                0x0000000008002c68       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002c68                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x00000000080024d4       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x00000000080024d4                TIM4_IRQHandler
+                0x0000000008002c7c       0x14 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002c7c                TIM4_IRQHandler
  .text._ZN13HardwareTimerC2EP11TIM_TypeDef
-                0x00000000080024e8       0x2a D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x00000000080024e8                HardwareTimer::HardwareTimer(TIM_TypeDef*)
-                0x00000000080024e8                HardwareTimer::HardwareTimer(TIM_TypeDef*)
+                0x0000000008002c90       0x2a D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002c90                HardwareTimer::HardwareTimer(TIM_TypeDef*)
+                0x0000000008002c90                HardwareTimer::HardwareTimer(TIM_TypeDef*)
  .text._ZNKSt8functionIFvvEEclEv
-                0x0000000008002512       0x12 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x0000000008002512                std::function<void ()>::operator()() const
+                0x0000000008002cba       0x12 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002cba                std::function<void ()>::operator()() const
  .text._ZN13HardwareTimer14updateCallbackEP17TIM_HandleTypeDef
-                0x0000000008002524       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x0000000008002524                HardwareTimer::updateCallback(TIM_HandleTypeDef*)
+                0x0000000008002ccc       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002ccc                HardwareTimer::updateCallback(TIM_HandleTypeDef*)
  .text.HAL_TIM_PeriodElapsedCallback
-                0x000000000800253c        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x000000000800253c                HAL_TIM_PeriodElapsedCallback
+                0x0000000008002ce4        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002ce4                HAL_TIM_PeriodElapsedCallback
  .text._ZN13HardwareTimer22captureCompareCallbackEP17TIM_HandleTypeDef
-                0x0000000008002540       0x3e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x0000000008002540                HardwareTimer::captureCompareCallback(TIM_HandleTypeDef*)
+                0x0000000008002ce8       0x3e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002ce8                HardwareTimer::captureCompareCallback(TIM_HandleTypeDef*)
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x000000000800257e        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x000000000800257e                HAL_TIM_OC_DelayElapsedCallback
+                0x0000000008002d26        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002d26                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x0000000008002582        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x0000000008002582                HAL_TIM_IC_CaptureCallback
- .text._Znwj    0x0000000008002586        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\new.cpp.o
-                0x0000000008002586                operator new(unsigned int)
- .text._ZdlPvj  0x000000000800258a        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\new.cpp.o
-                0x000000000800258a                operator delete(void*, unsigned int)
- *fill*         0x000000000800258e        0x2 
+                0x0000000008002d2a        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000008002d2a                HAL_TIM_IC_CaptureCallback
+ .text._Znwj    0x0000000008002d2e        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\new.cpp.o
+                0x0000000008002d2e                operator new(unsigned int)
+ .text._ZdlPvj  0x0000000008002d32        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\new.cpp.o
+                0x0000000008002d32                operator delete(void*, unsigned int)
+ *fill*         0x0000000008002d36        0x2 
  .text.set_GPIO_Port_Clock
-                0x0000000008002590       0xa8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\PortNames.c.o
-                0x0000000008002590                set_GPIO_Port_Clock
+                0x0000000008002d38       0xa8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\PortNames.c.o
+                0x0000000008002d38                set_GPIO_Port_Clock
  .text.pwm_stop
-                0x0000000008002638       0x5c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\analog.cpp.o
-                0x0000000008002638                pwm_stop
+                0x0000000008002de0       0x5c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\analog.cpp.o
+                0x0000000008002de0                pwm_stop
  .text.getCurrentMillis
-                0x0000000008002694        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
-                0x0000000008002694                getCurrentMillis
+                0x0000000008002e3c        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
+                0x0000000008002e3c                getCurrentMillis
  .text.noOsSystickHandler
-                0x0000000008002698        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
-                0x0000000008002698                osSystickHandler
-                0x0000000008002698                noOsSystickHandler
+                0x0000000008002e40        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
+                0x0000000008002e40                osSystickHandler
+                0x0000000008002e40                noOsSystickHandler
  .text.SysTick_Handler
-                0x000000000800269a       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
-                0x000000000800269a                SysTick_Handler
+                0x0000000008002e42       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
+                0x0000000008002e42                SysTick_Handler
  .text.configHSECapacitorTuning
-                0x00000000080026aa        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
-                0x00000000080026aa                configHSECapacitorTuning
+                0x0000000008002e52        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
+                0x0000000008002e52                configHSECapacitorTuning
  .text.configIPClock
-                0x00000000080026ac       0x44 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
-                0x00000000080026ac                configIPClock
+                0x0000000008002e54       0x44 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\clock.c.o
+                0x0000000008002e54                configIPClock
  .text.dwt_init
-                0x00000000080026f0       0x3c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\dwt.c.o
-                0x00000000080026f0                dwt_init
+                0x0000000008002e98       0x3c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\dwt.c.o
+                0x0000000008002e98                dwt_init
  .text.hw_config_init
-                0x000000000800272c       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\hw_config.c.o
-                0x000000000800272c                hw_config_init
+                0x0000000008002ed4       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\hw_config.c.o
+                0x0000000008002ed4                hw_config_init
  .text.startup._ZNSt8functionIFvvEEC2EDn.constprop.0.isra.0
-                0x0000000008002750        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002ef8        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
  .text.HAL_GPIO_EXTI_Callback
-                0x000000000800275c       0x2c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x000000000800275c                HAL_GPIO_EXTI_Callback
+                0x0000000008002f04       0x2c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f04                HAL_GPIO_EXTI_Callback
  .text.EXTI0_IRQHandler
-                0x0000000008002788        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x0000000008002788                EXTI0_IRQHandler
+                0x0000000008002f30        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f30                EXTI0_IRQHandler
  .text.EXTI1_IRQHandler
-                0x000000000800278e        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x000000000800278e                EXTI1_IRQHandler
+                0x0000000008002f36        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f36                EXTI1_IRQHandler
  .text.EXTI2_IRQHandler
-                0x0000000008002794        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x0000000008002794                EXTI2_IRQHandler
+                0x0000000008002f3c        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f3c                EXTI2_IRQHandler
  .text.EXTI3_IRQHandler
-                0x000000000800279a        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x000000000800279a                EXTI3_IRQHandler
+                0x0000000008002f42        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f42                EXTI3_IRQHandler
  .text.EXTI4_IRQHandler
-                0x00000000080027a0        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x00000000080027a0                EXTI4_IRQHandler
+                0x0000000008002f48        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f48                EXTI4_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x00000000080027a6       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x00000000080027a6                EXTI9_5_IRQHandler
+                0x0000000008002f4e       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f4e                EXTI9_5_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x00000000080027bc       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x00000000080027bc                EXTI15_10_IRQHandler
+                0x0000000008002f64       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f64                EXTI15_10_IRQHandler
  .text.startup._GLOBAL__sub_I__Z22stm32_interrupt_enableP12GPIO_TypeDeftSt8functionIFvvEEm
-                0x00000000080027d4       0xd8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008002f7c       0xd8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
  .text.exit._GLOBAL__sub_D__Z22stm32_interrupt_enableP12GPIO_TypeDeftSt8functionIFvvEEm
-                0x00000000080028ac       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008003054       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
  .text.pin_SetF1AFPin
-                0x00000000080028c8      0x1f8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x0000000008003070      0x1f8 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
  .text.LL_GPIO_SetPinMode
-                0x0000000008002ac0       0x2c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x0000000008003268       0x2c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
  .text.LL_GPIO_SetPinOutputType
-                0x0000000008002aec       0x2c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x0000000008003294       0x2c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
  .text.pin_in_pinmap
-                0x0000000008002b18       0x1e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008002b18                pin_in_pinmap
- *fill*         0x0000000008002b36        0x2 
+                0x00000000080032c0       0x1e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x00000000080032c0                pin_in_pinmap
+ *fill*         0x00000000080032de        0x2 
  .text.pin_function
-                0x0000000008002b38      0x17c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008002b38                pin_function
+                0x00000000080032e0      0x17c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x00000000080032e0                pin_function
  .text.pinmap_find_peripheral
-                0x0000000008002cb4       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008002cb4                pinmap_find_peripheral
+                0x000000000800345c       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x000000000800345c                pinmap_find_peripheral
  .text.pinmap_peripheral
-                0x0000000008002cca        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008002cca                pinmap_peripheral
+                0x0000000008003472        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x0000000008003472                pinmap_peripheral
  .text.pinmap_find_pin
-                0x0000000008002cd6       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008002cd6                pinmap_find_pin
+                0x000000000800347e       0x16 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x000000000800347e                pinmap_find_pin
  .text.pinmap_pin
-                0x0000000008002cec        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008002cec                pinmap_pin
+                0x0000000008003494        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x0000000008003494                pinmap_pin
  .text.SystemInit
-                0x0000000008002cf8       0x4c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\system_stm32yyxx.c.o
-                0x0000000008002cf8                SystemInit
+                0x00000000080034a0       0x4c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\system_stm32yyxx.c.o
+                0x00000000080034a0                SystemInit
  .text.get_timer_obj
-                0x0000000008002d44        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
-                0x0000000008002d44                get_timer_obj
+                0x00000000080034ec        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
+                0x00000000080034ec                get_timer_obj
  .text.enableTimerClock
-                0x0000000008002d48       0x88 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
-                0x0000000008002d48                enableTimerClock
+                0x00000000080034f0       0x88 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
+                0x00000000080034f0                enableTimerClock
  .text.disableTimerClock
-                0x0000000008002dd0       0x5c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
-                0x0000000008002dd0                disableTimerClock
+                0x0000000008003578       0x5c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
+                0x0000000008003578                disableTimerClock
  .text.getTimerUpIrq
-                0x0000000008002e2c       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
-                0x0000000008002e2c                getTimerUpIrq
+                0x00000000080035d4       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
+                0x00000000080035d4                getTimerUpIrq
  .text.getTimerCCIrq
-                0x0000000008002e6c       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
-                0x0000000008002e6c                getTimerCCIrq
+                0x0000000008003614       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
+                0x0000000008003614                getTimerCCIrq
  .text.HAL_TIM_Base_MspInit
-                0x0000000008002eac       0x4e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
-                0x0000000008002eac                HAL_TIM_Base_MspInit
- *fill*         0x0000000008002efa        0x2 
+                0x0000000008003654       0x4e D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\timer.c.o
+                0x0000000008003654                HAL_TIM_Base_MspInit
+ *fill*         0x00000000080036a2        0x2 
  .text.serial_rx_active
-                0x0000000008002efc       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002efc                serial_rx_active
+                0x00000000080036a4       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x00000000080036a4                serial_rx_active
  .text.serial_tx_active
-                0x0000000008002f20       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002f20                serial_tx_active
+                0x00000000080036c8       0x24 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x00000000080036c8                serial_tx_active
  .text.uart_attach_tx_callback
-                0x0000000008002f44       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002f44                uart_attach_tx_callback
+                0x00000000080036ec       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x00000000080036ec                uart_attach_tx_callback
  .text.uart_enable_tx
-                0x0000000008002f84       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002f84                uart_enable_tx
+                0x000000000800372c       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x000000000800372c                uart_enable_tx
  .text.uart_enable_rx
-                0x0000000008002fa0       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002fa0                uart_enable_rx
+                0x0000000008003748       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x0000000008003748                uart_enable_rx
  .text.HAL_UART_RxCpltCallback
-                0x0000000008002fbc        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002fbc                HAL_UART_RxCpltCallback
+                0x0000000008003764        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x0000000008003764                HAL_UART_RxCpltCallback
  .text.HAL_UART_TxCpltCallback
-                0x0000000008002fc2        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002fc2                HAL_UART_TxCpltCallback
+                0x000000000800376a        0x6 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x000000000800376a                HAL_UART_TxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x0000000008002fc8       0x7c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008002fc8                HAL_UART_ErrorCallback
+                0x0000000008003770       0x7c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x0000000008003770                HAL_UART_ErrorCallback
  .text.USART1_IRQHandler
-                0x0000000008003044       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008003044                USART1_IRQHandler
+                0x00000000080037ec       0x18 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x00000000080037ec                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x000000000800305c       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x000000000800305c                USART2_IRQHandler
+                0x0000000008003804       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x0000000008003804                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x0000000008003078       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-                0x0000000008003078                USART3_IRQHandler
- .text._sbrk    0x0000000008003094       0x3c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
-                0x0000000008003094                _sbrk
- .text._exit    0x00000000080030d0        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
-                0x00000000080030d0                _exit
- *fill*         0x00000000080030d2        0x2 
- .text._kill    0x00000000080030d4       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
-                0x00000000080030d4                _kill
- .text._getpid  0x00000000080030e4        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
-                0x00000000080030e4                _getpid
+                0x0000000008003820       0x1c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x0000000008003820                USART3_IRQHandler
+ .text._sbrk    0x000000000800383c       0x3c D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
+                0x000000000800383c                _sbrk
+ .text._exit    0x0000000008003878        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
+                0x0000000008003878                _exit
+ *fill*         0x000000000800387a        0x2 
+ .text._kill    0x000000000800387c       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
+                0x000000000800387c                _kill
+ .text._getpid  0x000000000800388c        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
+                0x000000000800388c                _getpid
  .text.SystemClock_Config
-                0x00000000080030e8       0x7c D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
-                0x00000000080030e8                SystemClock_Config
+                0x0000000008003890       0x7c D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
+                0x0000000008003890                SystemClock_Config
+ .text._ZN5Print5writeEPKhj
+                0x000000000800390c       0x2c D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
+                0x000000000800390c                Print::write(unsigned char const*, unsigned int)
+ .text._ZN5Print5writeEPKc
+                0x0000000008003938       0x20 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
+                0x0000000008003938                Print::write(char const*)
+ .text._ZN5Print5printEPKc
+                0x0000000008003958        0x8 D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
+                0x0000000008003958                Print::print(char const*)
  .text._ZN6Stream9timedReadEv
-                0x0000000008003164       0x2a D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
-                0x0000000008003164                Stream::timedRead()
+                0x0000000008003960       0x2a D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
+                0x0000000008003960                Stream::timedRead()
  .text._ZN6Stream9readBytesEPcj
-                0x000000000800318e       0x22 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
-                0x000000000800318e                Stream::readBytes(char*, unsigned int)
+                0x000000000800398a       0x22 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
+                0x000000000800398a                Stream::readBytes(char*, unsigned int)
  .text._ZN6Stream14readBytesUntilEcPcj
-                0x00000000080031b0       0x30 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
-                0x00000000080031b0                Stream::readBytesUntil(char, char*, unsigned int)
+                0x00000000080039ac       0x30 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
+                0x00000000080039ac                Stream::readBytesUntil(char, char*, unsigned int)
  .text.startup._Z7premainv
-                0x00000000080031e0       0x10 D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
-                0x00000000080031e0                premain()
+                0x00000000080039dc       0x10 D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
+                0x00000000080039dc                premain()
  .text.startup.main
-                0x00000000080031f0       0x14 D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
-                0x00000000080031f0                main
+                0x00000000080039ec       0x14 D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
+                0x00000000080039ec                main
  .text.Reset_Handler
-                0x0000000008003204       0x48 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
-                0x0000000008003204                Reset_Handler
+                0x0000000008003a00       0x48 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
+                0x0000000008003a00                Reset_Handler
  .text.Default_Handler
-                0x000000000800324c        0x2 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
-                0x000000000800324c                RTC_Alarm_IRQHandler
-                0x000000000800324c                DebugMon_Handler
-                0x000000000800324c                HardFault_Handler
-                0x000000000800324c                PVD_IRQHandler
-                0x000000000800324c                PendSV_Handler
-                0x000000000800324c                NMI_Handler
-                0x000000000800324c                UsageFault_Handler
-                0x000000000800324c                ADC1_2_IRQHandler
-                0x000000000800324c                SPI1_IRQHandler
-                0x000000000800324c                TAMPER_IRQHandler
-                0x000000000800324c                DMA1_Channel4_IRQHandler
-                0x000000000800324c                RTC_IRQHandler
-                0x000000000800324c                DMA1_Channel7_IRQHandler
-                0x000000000800324c                CAN1_RX1_IRQHandler
-                0x000000000800324c                DMA1_Channel6_IRQHandler
-                0x000000000800324c                RCC_IRQHandler
-                0x000000000800324c                TIM1_TRG_COM_IRQHandler
-                0x000000000800324c                DMA1_Channel1_IRQHandler
-                0x000000000800324c                Default_Handler
-                0x000000000800324c                SPI2_IRQHandler
-                0x000000000800324c                MemManage_Handler
-                0x000000000800324c                SVC_Handler
-                0x000000000800324c                DMA1_Channel5_IRQHandler
-                0x000000000800324c                USB_LP_CAN1_RX0_IRQHandler
-                0x000000000800324c                USB_HP_CAN1_TX_IRQHandler
-                0x000000000800324c                DMA1_Channel3_IRQHandler
-                0x000000000800324c                WWDG_IRQHandler
-                0x000000000800324c                TIM1_BRK_IRQHandler
-                0x000000000800324c                DMA1_Channel2_IRQHandler
-                0x000000000800324c                CAN1_SCE_IRQHandler
-                0x000000000800324c                FLASH_IRQHandler
-                0x000000000800324c                BusFault_Handler
-                0x000000000800324c                USBWakeUp_IRQHandler
- *fill*         0x000000000800324e        0x2 
- .text.pinMode  0x0000000008003250       0xbc D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
-                0x0000000008003250                pinMode
+                0x0000000008003a48        0x2 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
+                0x0000000008003a48                RTC_Alarm_IRQHandler
+                0x0000000008003a48                DebugMon_Handler
+                0x0000000008003a48                HardFault_Handler
+                0x0000000008003a48                PVD_IRQHandler
+                0x0000000008003a48                PendSV_Handler
+                0x0000000008003a48                NMI_Handler
+                0x0000000008003a48                UsageFault_Handler
+                0x0000000008003a48                ADC1_2_IRQHandler
+                0x0000000008003a48                SPI1_IRQHandler
+                0x0000000008003a48                TAMPER_IRQHandler
+                0x0000000008003a48                DMA1_Channel4_IRQHandler
+                0x0000000008003a48                RTC_IRQHandler
+                0x0000000008003a48                DMA1_Channel7_IRQHandler
+                0x0000000008003a48                CAN1_RX1_IRQHandler
+                0x0000000008003a48                DMA1_Channel6_IRQHandler
+                0x0000000008003a48                RCC_IRQHandler
+                0x0000000008003a48                TIM1_TRG_COM_IRQHandler
+                0x0000000008003a48                DMA1_Channel1_IRQHandler
+                0x0000000008003a48                Default_Handler
+                0x0000000008003a48                SPI2_IRQHandler
+                0x0000000008003a48                MemManage_Handler
+                0x0000000008003a48                SVC_Handler
+                0x0000000008003a48                DMA1_Channel5_IRQHandler
+                0x0000000008003a48                USB_LP_CAN1_RX0_IRQHandler
+                0x0000000008003a48                USB_HP_CAN1_TX_IRQHandler
+                0x0000000008003a48                DMA1_Channel3_IRQHandler
+                0x0000000008003a48                WWDG_IRQHandler
+                0x0000000008003a48                TIM1_BRK_IRQHandler
+                0x0000000008003a48                DMA1_Channel2_IRQHandler
+                0x0000000008003a48                CAN1_SCE_IRQHandler
+                0x0000000008003a48                FLASH_IRQHandler
+                0x0000000008003a48                BusFault_Handler
+                0x0000000008003a48                USBWakeUp_IRQHandler
+ *fill*         0x0000000008003a4a        0x2 
+ .text.pinMode  0x0000000008003a4c       0xbc D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
+                0x0000000008003a4c                pinMode
  .text.digitalWrite
-                0x000000000800330c       0x74 D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
-                0x000000000800330c                digitalWrite
- .text.millis   0x0000000008003380        0x4 D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
-                0x0000000008003380                millis
+                0x0000000008003b08       0x74 D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
+                0x0000000008003b08                digitalWrite
+ .text.millis   0x0000000008003b7c        0x4 D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
+                0x0000000008003b7c                millis
+ .text.delay    0x0000000008003b80       0x1c D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
+                0x0000000008003b80                delay
  .text._Z14serialEventRunv
-                0x0000000008003384       0x1c D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
-                0x0000000008003384                serialEventRun()
- .text.init     0x00000000080033a0        0x4 D:\Moji projekti\PCD8544\build\core\core.a(board.c.o)
-                0x00000000080033a0                init
+                0x0000000008003b9c       0x1c D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
+                0x0000000008003b9c                serialEventRun()
+ .text.init     0x0000000008003bb8        0x4 D:\Moji projekti\PCD8544\build\core\core.a(board.c.o)
+                0x0000000008003bb8                init
+ .text.__empty  0x0000000008003bbc        0x2 D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
+                0x0000000008003bbc                yield
  .text._ZN14HardwareSerial9availableEv
-                0x00000000080033a4       0x10 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x00000000080033a4                HardwareSerial::available()
+                0x0000000008003bbe       0x10 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003bbe                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x00000000080033b4       0x1a D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x00000000080033b4                HardwareSerial::peek()
+                0x0000000008003bce       0x1a D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003bce                HardwareSerial::peek()
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00000000080033ce       0x1c D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x00000000080033ce                HardwareSerial::availableForWrite()
+                0x0000000008003be8       0x1c D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003be8                HardwareSerial::availableForWrite()
  .text._ZN14HardwareSerial5writeEh
-                0x00000000080033ea       0x18 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x00000000080033ea                HardwareSerial::write(unsigned char)
- *fill*         0x0000000008003402        0x2 
+                0x0000000008003c04       0x18 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003c04                HardwareSerial::write(unsigned char)
  .text._ZN14HardwareSerial16_tx_complete_irqEP8serial_s
-                0x0000000008003404       0x60 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003404                HardwareSerial::_tx_complete_irq(serial_s*)
+                0x0000000008003c1c       0x60 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003c1c                HardwareSerial::_tx_complete_irq(serial_s*)
  .text._ZN14HardwareSerial5writeEPKhj
-                0x0000000008003464       0xe4 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003464                HardwareSerial::write(unsigned char const*, unsigned int)
+                0x0000000008003c7c       0xe4 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003c7c                HardwareSerial::write(unsigned char const*, unsigned int)
  .text._ZN14HardwareSerial5flushEm
-                0x0000000008003548       0x36 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003548                HardwareSerial::flush(unsigned long)
+                0x0000000008003d60       0x36 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003d60                HardwareSerial::flush(unsigned long)
  .text._ZN14HardwareSerial4initE7PinNameS0_S0_S0_
-                0x000000000800357e       0x32 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x000000000800357e                HardwareSerial::init(PinName, PinName, PinName, PinName)
+                0x0000000008003d96       0x32 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003d96                HardwareSerial::init(PinName, PinName, PinName, PinName)
  .text._ZN14HardwareSerialC2EPv16HalfDuplexMode_t
-                0x00000000080035b0       0x94 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x00000000080035b0                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
-                0x00000000080035b0                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x0000000008003dc8       0x94 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003dc8                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x0000000008003dc8                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
  .text._ZN14HardwareSerial18enableHalfDuplexRxEv
-                0x0000000008003644       0x2e D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003644                HardwareSerial::enableHalfDuplexRx()
+                0x0000000008003e5c       0x2e D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003e5c                HardwareSerial::enableHalfDuplexRx()
  .text._ZN14HardwareSerial4readEv
-                0x0000000008003672       0x2e D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003672                HardwareSerial::read()
+                0x0000000008003e8a       0x2e D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008003e8a                HardwareSerial::read()
  .text.startup._GLOBAL__sub_I_Serial1
-                0x00000000080036a0       0x14 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
- .text.malloc   0x00000000080036b4       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
-                0x00000000080036b4                malloc
- .text.free     0x00000000080036c4       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
-                0x00000000080036c4                free
+                0x0000000008003eb8       0x14 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+ .text.malloc   0x0000000008003ecc       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
+                0x0000000008003ecc                malloc
+ .text.free     0x0000000008003edc       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
+                0x0000000008003edc                free
  .text.sbrk_aligned
-                0x00000000080036d4       0x44 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
+                0x0000000008003eec       0x44 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x0000000008003718       0xf0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
-                0x0000000008003718                _malloc_r
+                0x0000000008003f30       0xf0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
+                0x0000000008003f30                _malloc_r
  .text.__malloc_lock
-                0x0000000008003808        0xc c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mlock.o)
-                0x0000000008003808                __malloc_lock
+                0x0000000008004020        0xc c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mlock.o)
+                0x0000000008004020                __malloc_lock
  .text.__malloc_unlock
-                0x0000000008003814        0xc c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mlock.o)
-                0x0000000008003814                __malloc_unlock
- .text.realloc  0x0000000008003820       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-realloc.o)
-                0x0000000008003820                realloc
+                0x000000000800402c        0xc c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mlock.o)
+                0x000000000800402c                __malloc_unlock
+ .text.realloc  0x0000000008004038       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-realloc.o)
+                0x0000000008004038                realloc
  .text._realloc_r
-                0x0000000008003830       0x5c c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reallocr.o)
-                0x0000000008003830                _realloc_r
- .text.memset   0x000000000800388c       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
-                0x000000000800388c                memset
- .text._sbrk_r  0x000000000800389c       0x20 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-sbrkr.o)
-                0x000000000800389c                _sbrk_r
+                0x0000000008004048       0x5c c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reallocr.o)
+                0x0000000008004048                _realloc_r
+ .text.memset   0x00000000080040a4       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+                0x00000000080040a4                memset
+ .text._sbrk_r  0x00000000080040b4       0x20 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-sbrkr.o)
+                0x00000000080040b4                _sbrk_r
  .text.__libc_init_array
-                0x00000000080038bc       0x48 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
-                0x00000000080038bc                __libc_init_array
+                0x00000000080040d4       0x48 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+                0x00000000080040d4                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x0000000008003904        0x2 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
-                0x0000000008003904                __retarget_lock_acquire_recursive
+                0x000000000800411c        0x2 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
+                0x000000000800411c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008003906        0x2 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
-                0x0000000008003906                __retarget_lock_release_recursive
- .text.memcpy   0x0000000008003908       0x1c c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
-                0x0000000008003908                memcpy
- .text._free_r  0x0000000008003924       0x90 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-freer.o)
-                0x0000000008003924                _free_r
+                0x000000000800411e        0x2 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
+                0x000000000800411e                __retarget_lock_release_recursive
+ .text.memcpy   0x0000000008004120       0x1c c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
+                0x0000000008004120                memcpy
+ .text._free_r  0x000000000800413c       0x90 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-freer.o)
+                0x000000000800413c                _free_r
  .text._malloc_usable_size_r
-                0x00000000080039b4       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-msizer.o)
-                0x00000000080039b4                _malloc_usable_size_r
- .text.abort    0x00000000080039c4        0xe c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-abort.o)
-                0x00000000080039c4                abort
+                0x00000000080041cc       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-msizer.o)
+                0x00000000080041cc                _malloc_usable_size_r
+ .text.abort    0x00000000080041dc        0xe c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-abort.o)
+                0x00000000080041dc                abort
  .text._raise_r
-                0x00000000080039d2       0x50 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signal.o)
-                0x00000000080039d2                _raise_r
- *fill*         0x0000000008003a22        0x2 
- .text.raise    0x0000000008003a24       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signal.o)
-                0x0000000008003a24                raise
- .text._kill_r  0x0000000008003a34       0x24 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signalr.o)
-                0x0000000008003a34                _kill_r
+                0x00000000080041ea       0x50 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signal.o)
+                0x00000000080041ea                _raise_r
+ *fill*         0x000000000800423a        0x2 
+ .text.raise    0x000000000800423c       0x10 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signal.o)
+                0x000000000800423c                raise
+ .text._kill_r  0x000000000800424c       0x24 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signalr.o)
+                0x000000000800424c                _kill_r
  .text._getpid_r
-                0x0000000008003a58        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signalr.o)
-                0x0000000008003a58                _getpid_r
+                0x0000000008004270        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signalr.o)
+                0x0000000008004270                _getpid_r
  .text.unlikely._ZSt25__throw_bad_function_callv
-                0x0000000008003a5c        0x6 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(functional.o)
-                0x0000000008003a5c                std::__throw_bad_function_call()
+                0x0000000008004274        0x6 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(functional.o)
+                0x0000000008004274                std::__throw_bad_function_call()
  *(.glue_7)
- .glue_7        0x0000000008003a62        0x0 linker stubs
+ .glue_7        0x000000000800427a        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008003a62        0x0 linker stubs
+ .glue_7t       0x000000000800427a        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x0000000008003a62        0x2 
- .eh_frame      0x0000000008003a64        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
+ *fill*         0x000000000800427a        0x2 
+ .eh_frame      0x000000000800427c        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008003a64        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crti.o
-                0x0000000008003a64                _init
- .init          0x0000000008003a68        0x8 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtn.o
+ .init          0x000000000800427c        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crti.o
+                0x000000000800427c                _init
+ .init          0x0000000008004280        0x8 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008003a70        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crti.o
-                0x0000000008003a70                _fini
- .fini          0x0000000008003a74        0x8 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtn.o
-                0x0000000008003a7c                . = ALIGN (0x4)
-                0x0000000008003a7c                _etext = .
+ .fini          0x0000000008004288        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crti.o
+                0x0000000008004288                _fini
+ .fini          0x000000000800428c        0x8 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtn.o
+                0x0000000008004294                . = ALIGN (0x4)
+                0x0000000008004294                _etext = .
 
-.vfp11_veneer   0x0000000008003a7c        0x0
- .vfp11_veneer  0x0000000008003a7c        0x0 linker stubs
+.vfp11_veneer   0x0000000008004294        0x0
+ .vfp11_veneer  0x0000000008004294        0x0 linker stubs
 
-.v4_bx          0x0000000008003a7c        0x0
- .v4_bx         0x0000000008003a7c        0x0 linker stubs
+.v4_bx          0x0000000008004294        0x0
+ .v4_bx         0x0000000008004294        0x0 linker stubs
 
-.iplt           0x0000000008003a7c        0x0
- .iplt          0x0000000008003a7c        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0000000008004294        0x0
+ .iplt          0x0000000008004294        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x0000000008003a7c      0x490
-                0x0000000008003a7c                . = ALIGN (0x4)
+.rodata         0x0000000008004294      0xa48
+                0x0000000008004294                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
+ .rodata._ZTV11PCD8544_LCD
+                0x0000000008004294       0x58 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                0x0000000008004294                vtable for PCD8544_LCD
+ .rodata.setup.str1.1
+                0x00000000080042ec        0x6 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+ *fill*         0x00000000080042f2        0x2 
+ .rodata._ZTV12Adafruit_GFX
+                0x00000000080042f4       0x58 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                0x00000000080042f4                vtable for Adafruit_GFX
+ .rodata._ZL4font
+                0x000000000800434c      0x500 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
  .rodata._ZTV7TwoWire
-                0x0000000008003a7c       0x2c D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x0000000008003a7c                vtable for TwoWire
+                0x000000000800484c       0x2c D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x000000000800484c                vtable for TwoWire
  .rodata.aPredivFactorTable.0
-                0x0000000008003aa8        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
+                0x0000000008004878        0x2 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
  .rodata.aPLLMULFactorTable.1
-                0x0000000008003aaa       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
- *fill*         0x0000000008003aba        0x2 
+                0x000000000800487a       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal_rcc.c.o
+ *fill*         0x000000000800488a        0x2 
  .rodata.pin_map_ll
-                0x0000000008003abc       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
-                0x0000000008003abc                pin_map_ll
+                0x000000000800488c       0x40 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\pinmap.c.o
+                0x000000000800488c                pin_map_ll
  .rodata.AHBPrescTable
-                0x0000000008003afc       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\system_stm32yyxx.c.o
-                0x0000000008003afc                AHBPrescTable
+                0x00000000080048cc       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\system_stm32yyxx.c.o
+                0x00000000080048cc                AHBPrescTable
  .rodata.PinMap_UART_RX
-                0x0000000008003b0c       0x48 D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
-                0x0000000008003b0c                PinMap_UART_RX
+                0x00000000080048dc       0x48 D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
+                0x00000000080048dc                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x0000000008003b54       0x48 D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
-                0x0000000008003b54                PinMap_UART_TX
+                0x0000000008004924       0x48 D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
+                0x0000000008004924                PinMap_UART_TX
  .rodata.PinMap_TIM
-                0x0000000008003b9c      0x234 D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
-                0x0000000008003b9c                PinMap_TIM
+                0x000000000800496c      0x234 D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
+                0x000000000800496c                PinMap_TIM
  .rodata.analogInputPin
-                0x0000000008003dd0       0x40 D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
-                0x0000000008003dd0                analogInputPin
+                0x0000000008004ba0       0x40 D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
+                0x0000000008004ba0                analogInputPin
  .rodata.digitalPin
-                0x0000000008003e10       0xcc D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
-                0x0000000008003e10                digitalPin
+                0x0000000008004be0       0xcc D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
+                0x0000000008004be0                digitalPin
  .rodata._ZTV14HardwareSerial
-                0x0000000008003edc       0x30 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003edc                vtable for HardwareSerial
-                0x0000000008003f0c                . = ALIGN (0x4)
+                0x0000000008004cac       0x30 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008004cac                vtable for HardwareSerial
+                0x0000000008004cdc                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008003f0c        0x0
- .rel.iplt      0x0000000008003f0c        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008004cdc        0x0
+ .rel.iplt      0x0000000008004cdc        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
 
-.ARM.extab      0x0000000008003f0c        0x0
-                0x0000000008003f0c                . = ALIGN (0x4)
+.ARM.extab      0x0000000008004cdc        0x0
+                0x0000000008004cdc                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008003f0c                . = ALIGN (0x4)
+                0x0000000008004cdc                . = ALIGN (0x4)
 
-.ARM            0x0000000008003f0c        0x0
-                0x0000000008003f0c                . = ALIGN (0x4)
-                0x0000000008003f0c                __exidx_start = .
+.ARM            0x0000000008004cdc        0x0
+                0x0000000008004cdc                . = ALIGN (0x4)
+                0x0000000008004cdc                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008003f0c                __exidx_end = .
-                0x0000000008003f0c                . = ALIGN (0x4)
+                0x0000000008004cdc                __exidx_end = .
+                0x0000000008004cdc                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008003f0c        0x0
-                0x0000000008003f0c                . = ALIGN (0x4)
-                0x0000000008003f0c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008004cdc        0x0
+                0x0000000008004cdc                . = ALIGN (0x4)
+                0x0000000008004cdc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008003f0c                PROVIDE (__preinit_array_end = .)
-                0x0000000008003f0c                . = ALIGN (0x4)
+                0x0000000008004cdc                PROVIDE (__preinit_array_end = .)
+                0x0000000008004cdc                . = ALIGN (0x4)
 
-.init_array     0x0000000008003f0c       0x1c
-                0x0000000008003f0c                . = ALIGN (0x4)
-                0x0000000008003f0c                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008004cdc       0x1c
+                0x0000000008004cdc                . = ALIGN (0x4)
+                0x0000000008004cdc                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00101
-                0x0000000008003f0c        0x4 D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
+                0x0000000008004cdc        0x4 D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
  *(.init_array*)
- .init_array    0x0000000008003f10        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
- .init_array    0x0000000008003f14        0x4 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
- .init_array    0x0000000008003f18        0x4 D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
- .init_array    0x0000000008003f1c        0x4 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
- .init_array    0x0000000008003f20        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
- .init_array    0x0000000008003f24        0x4 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x0000000008003f28                PROVIDE (__init_array_end = .)
-                0x0000000008003f28                . = ALIGN (0x4)
+ .init_array    0x0000000008004ce0        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
+ .init_array    0x0000000008004ce4        0x4 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+ .init_array    0x0000000008004ce8        0x4 D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
+ .init_array    0x0000000008004cec        0x4 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+ .init_array    0x0000000008004cf0        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+ .init_array    0x0000000008004cf4        0x4 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000008004cf8                PROVIDE (__init_array_end = .)
+                0x0000000008004cf8                . = ALIGN (0x4)
 
-.fini_array     0x0000000008003f28        0xc
-                0x0000000008003f28                . = ALIGN (0x4)
-                0x0000000008003f28                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000008004cf8        0xc
+                0x0000000008004cf8                . = ALIGN (0x4)
+                0x0000000008004cf8                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003f28        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
- .fini_array    0x0000000008003f2c        0x4 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
- .fini_array    0x0000000008003f30        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
-                0x0000000008003f34                PROVIDE (__fini_array_end = .)
-                0x0000000008003f34                . = ALIGN (0x4)
-                0x0000000008003f34                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008004cf8        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x0000000008004cfc        0x4 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+ .fini_array    0x0000000008004d00        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000008004d04                PROVIDE (__fini_array_end = .)
+                0x0000000008004d04                . = ALIGN (0x4)
+                0x0000000008004d04                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x7c load address 0x0000000008003f34
+.data           0x0000000020000000       0x7c load address 0x0000000008004d04
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -5786,11 +5829,11 @@ LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/x
                 0x000000002000007c                . = ALIGN (0x4)
                 0x000000002000007c                _edata = .
 
-.igot.plt       0x000000002000007c        0x0 load address 0x0000000008003fb0
+.igot.plt       0x000000002000007c        0x0 load address 0x0000000008004d80
  .igot.plt      0x000000002000007c        0x0 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
                 0x000000002000007c                . = ALIGN (0x4)
 
-.bss            0x000000002000007c      0x760 load address 0x0000000008003fb0
+.bss            0x000000002000007c      0x784 load address 0x0000000008004d80
                 0x000000002000007c                _sbss = .
                 0x000000002000007c                __bss_start__ = _sbss
  *(.bss)
@@ -5800,46 +5843,46 @@ LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/x
  *fill*         0x000000002000007d        0x3 
  .bss.object.0  0x0000000020000080       0x18 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
  .bss.display_lcd
-                0x0000000020000098      0x210 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+                0x0000000020000098      0x234 D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
                 0x0000000020000098                display_lcd
- .bss.SPI       0x00000000200002a8       0x74 D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
-                0x00000000200002a8                SPI
- .bss.Wire      0x000000002000031c       0xe4 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
-                0x000000002000031c                Wire
+ .bss.SPI       0x00000000200002cc       0x74 D:\Moji projekti\PCD8544\build\libraries\SPI\SPI.cpp.o
+                0x00000000200002cc                SPI
+ .bss.Wire      0x0000000020000340       0xe4 D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
+                0x0000000020000340                Wire
  .bss.i2c_handles
-                0x0000000020000400        0x8 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
- .bss.uwTick    0x0000000020000408        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
-                0x0000000020000408                uwTick
+                0x0000000020000424        0x8 D:\Moji projekti\PCD8544\build\libraries\Wire\utility\twi.c.o
+ .bss.uwTick    0x000000002000042c        0x4 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HAL\stm32yyxx_hal.c.o
+                0x000000002000042c                uwTick
  .bss.HardwareTimer_Handle
-                0x000000002000040c       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
-                0x000000002000040c                HardwareTimer_Handle
+                0x0000000020000430       0x10 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
+                0x0000000020000430                HardwareTimer_Handle
  .bss._ZL13gpio_irq_conf
-                0x000000002000041c      0x140 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
+                0x0000000020000440      0x140 D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
  .bss.uart_handlers
-                0x000000002000055c        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
+                0x0000000020000580        0xc D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
  .bss.g_anOutputPinConfigured
-                0x0000000020000568       0x14 D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
-                0x0000000020000568                g_anOutputPinConfigured
- .bss.Serial1   0x000000002000057c      0x118 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
-                0x000000002000057c                Serial1
+                0x000000002000058c       0x14 D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
+                0x000000002000058c                g_anOutputPinConfigured
+ .bss.Serial1   0x00000000200005a0      0x118 D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x00000000200005a0                Serial1
  .bss.__malloc_sbrk_start
-                0x0000000020000694        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
-                0x0000000020000694                __malloc_sbrk_start
+                0x00000000200006b8        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
+                0x00000000200006b8                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x0000000020000698        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
-                0x0000000020000698                __malloc_free_list
- .bss.__sf      0x000000002000069c      0x138 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-findfp.o)
-                0x000000002000069c                __sf
- .bss.errno     0x00000000200007d4        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reent.o)
-                0x00000000200007d4                errno
+                0x00000000200006bc        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
+                0x00000000200006bc                __malloc_free_list
+ .bss.__sf      0x00000000200006c0      0x138 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-findfp.o)
+                0x00000000200006c0                __sf
+ .bss.errno     0x00000000200007f8        0x4 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reent.o)
+                0x00000000200007f8                errno
  .bss.__lock___malloc_recursive_mutex
-                0x00000000200007d8        0x1 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
-                0x00000000200007d8                __lock___malloc_recursive_mutex
+                0x00000000200007fc        0x1 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
+                0x00000000200007fc                __lock___malloc_recursive_mutex
  *(COMMON)
-                0x00000000200007dc                . = ALIGN (0x4)
- *fill*         0x00000000200007d9        0x3 
-                0x00000000200007dc                _ebss = .
-                0x00000000200007dc                __bss_end__ = _ebss
+                0x0000000020000800                . = ALIGN (0x4)
+ *fill*         0x00000000200007fd        0x3 
+                0x0000000020000800                _ebss = .
+                0x0000000020000800                __bss_end__ = _ebss
 LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crti.o
 LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtbegin.o
 LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
@@ -5847,25 +5890,24 @@ LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/x
                 0x0000000000020000                LD_MAX_SIZE = 0x20000
                 0x0000000000005000                LD_MAX_DATA_SIZE = 0x5000
 
-.noinit         0x00000000200007dc        0x0
-                0x00000000200007dc                . = ALIGN (0x4)
-                0x00000000200007dc                _snoinit = .
+.noinit         0x0000000020000800        0x0
+                0x0000000020000800                . = ALIGN (0x4)
+                0x0000000020000800                _snoinit = .
  *(.noinit)
  *(.noinit*)
-                0x00000000200007dc                . = ALIGN (0x4)
-                0x00000000200007dc                _enoinit = .
+                0x0000000020000800                . = ALIGN (0x4)
+                0x0000000020000800                _enoinit = .
 
 ._user_heap_stack
-                0x00000000200007dc      0x604
-                0x00000000200007e0                . = ALIGN (0x8)
- *fill*         0x00000000200007dc        0x4 
+                0x0000000020000800      0x600
+                0x0000000020000800                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x00000000200007e0                PROVIDE (_end = .)
-                0x00000000200009e0                . = (. + _Min_Heap_Size)
- *fill*         0x00000000200007e0      0x200 
-                0x0000000020000de0                . = (. + _Min_Stack_Size)
- *fill*         0x00000000200009e0      0x400 
-                0x0000000020000de0                . = ALIGN (0x8)
+                0x0000000020000800                PROVIDE (_end = .)
+                0x0000000020000a00                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000800      0x200 
+                0x0000000020000e00                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000a00      0x400 
+                0x0000000020000e00                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -5944,63 +5986,69 @@ LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/x
  .ARM.attributes
                 0x00000000000005bd       0x2d D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
  .ARM.attributes
-                0x00000000000005ea       0x2d D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
+                0x00000000000005ea       0x2d D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .ARM.attributes
-                0x0000000000000617       0x2d D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
+                0x0000000000000617       0x2d D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
  .ARM.attributes
-                0x0000000000000644       0x21 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
+                0x0000000000000644       0x2d D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
  .ARM.attributes
-                0x0000000000000665       0x2d D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
+                0x0000000000000671       0x21 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
  .ARM.attributes
-                0x0000000000000692       0x2d D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
+                0x0000000000000692       0x2d D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
  .ARM.attributes
-                0x00000000000006bf       0x2d D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
+                0x00000000000006bf       0x2d D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
  .ARM.attributes
-                0x00000000000006ec       0x2d D:\Moji projekti\PCD8544\build\core\core.a(board.c.o)
+                0x00000000000006ec       0x2d D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
  .ARM.attributes
-                0x0000000000000719       0x2d D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
+                0x0000000000000719       0x2d D:\Moji projekti\PCD8544\build\core\core.a(board.c.o)
  .ARM.attributes
-                0x0000000000000746       0x2d D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+                0x0000000000000746       0x2d D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
  .ARM.attributes
-                0x0000000000000773       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
+                0x0000000000000773       0x2d D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
  .ARM.attributes
-                0x00000000000007a0       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
+                0x00000000000007a0       0x2d D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
  .ARM.attributes
-                0x00000000000007cd       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mlock.o)
+                0x00000000000007cd       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
  .ARM.attributes
-                0x00000000000007fa       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-realloc.o)
+                0x00000000000007fa       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mallocr.o)
  .ARM.attributes
-                0x0000000000000827       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reallocr.o)
+                0x0000000000000827       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-mlock.o)
  .ARM.attributes
-                0x0000000000000854       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-findfp.o)
+                0x0000000000000854       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-realloc.o)
  .ARM.attributes
-                0x0000000000000881       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+                0x0000000000000881       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reallocr.o)
  .ARM.attributes
-                0x00000000000008ae       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reent.o)
+                0x00000000000008ae       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-findfp.o)
  .ARM.attributes
-                0x00000000000008db       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-impure.o)
+                0x00000000000008db       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x0000000000000908       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-sbrkr.o)
+                0x0000000000000908       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-reent.o)
  .ARM.attributes
-                0x0000000000000935       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+                0x0000000000000935       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-impure.o)
  .ARM.attributes
-                0x0000000000000962       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
+                0x0000000000000962       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-sbrkr.o)
  .ARM.attributes
-                0x000000000000098f       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
+                0x000000000000098f       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x00000000000009bc       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-freer.o)
+                0x00000000000009bc       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-lock.o)
  .ARM.attributes
-                0x00000000000009e9       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-msizer.o)
+                0x00000000000009e9       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x0000000000000a16       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-abort.o)
+                0x0000000000000a16       0x17 c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-strlen.o)
  .ARM.attributes
-                0x0000000000000a43       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signal.o)
+                0x0000000000000a2d       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-freer.o)
  .ARM.attributes
-                0x0000000000000a70       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signalr.o)
+                0x0000000000000a5a       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-msizer.o)
  .ARM.attributes
-                0x0000000000000a9d       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(functional.o)
+                0x0000000000000a87       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-abort.o)
  .ARM.attributes
-                0x0000000000000aca       0x1d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtn.o
+                0x0000000000000ab4       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signal.o)
+ .ARM.attributes
+                0x0000000000000ae1       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-signalr.o)
+ .ARM.attributes
+                0x0000000000000b0e       0x2d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(functional.o)
+ .ARM.attributes
+                0x0000000000000b3b       0x1d c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(D:\Moji projekti\PCD8544\build/PCD8544.ino.elf elf32-littlearm)
 LOAD linker stubs
 LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
@@ -6042,12 +6090,14 @@ LOAD c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/x
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\syscalls.c.o
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
+ .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(main.cpp.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(wiring_digital.c.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(WSerial.cpp.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(board.c.o)
+ .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(hooks.c.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
  .comment       0x0000000000000039       0x3a D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
  .comment       0x0000000000000039       0x3a c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(libc_a-malloc.o)
@@ -6115,9 +6165,10 @@ Adafruit_BusIO_RegisterBits::Adafruit_BusIO_RegisterBits(Adafruit_BusIO_Register
 Adafruit_BusIO_RegisterBits::read()               D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp.o
 Adafruit_BusIO_RegisterBits::write(unsigned long) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp.o
 Adafruit_GFX::Adafruit_GFX(short, short)          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
-Adafruit_GFX::Adafruit_GFX(short, short)          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+Adafruit_GFX::Adafruit_GFX(short, short)          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::charBounds(unsigned char, short*, short*, short*, short*, short*, short*) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawBitmap(short, short, unsigned char const*, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawBitmap(short, short, unsigned char const*, short, short, unsigned short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
@@ -6129,8 +6180,10 @@ Adafruit_GFX::drawCircle(short, short, short, unsigned short) D:\Moji projekti\P
 Adafruit_GFX::drawCircleHelper(short, short, short, unsigned char, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawFastHLine(short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::drawFastVLine(short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::drawGrayscaleBitmap(short, short, unsigned char const*, short, short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawGrayscaleBitmap(short, short, unsigned char const*, unsigned char const*, short, short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawGrayscaleBitmap(short, short, unsigned char*, short, short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
@@ -6138,6 +6191,7 @@ Adafruit_GFX::drawGrayscaleBitmap(short, short, unsigned char*, unsigned char*, 
 Adafruit_GFX::drawLine(short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::drawRGBBitmap(short, short, unsigned short const*, short, short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawRGBBitmap(short, short, unsigned short const*, unsigned char const*, short, short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawRGBBitmap(short, short, unsigned short*, short, short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
@@ -6145,46 +6199,60 @@ Adafruit_GFX::drawRGBBitmap(short, short, unsigned short*, unsigned char*, short
 Adafruit_GFX::drawRect(short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::drawRoundRect(short, short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawTriangle(short, short, short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::drawXBitmap(short, short, unsigned char const*, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::endWrite()                          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::fillCircle(short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::fillCircleHelper(short, short, short, unsigned char, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::fillRect(short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::fillRoundRect(short, short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::fillScreen(unsigned short)          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::fillTriangle(short, short, short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::getTextBounds(String const&, short, short, short*, short*, unsigned short*, unsigned short*) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::getTextBounds(__FlashStringHelper const*, short, short, short*, short*, unsigned short*, unsigned short*) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::getTextBounds(char const*, short, short, short*, short*, unsigned short*, unsigned short*) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::invertDisplay(bool)                 D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::setFont(GFXfont const*)             D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::setRotation(unsigned char)          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::setTextSize(unsigned char)          D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
 Adafruit_GFX::setTextSize(unsigned char, unsigned char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX::startWrite()                        D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::write(unsigned char)                D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::writeFastHLine(short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::writeFastVLine(short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::writeFillRect(short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::writeLine(short, short, short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX::writePixel(short, short, unsigned short) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 Adafruit_GFX_Button::Adafruit_GFX_Button()        D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX_Button::Adafruit_GFX_Button()        D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Adafruit_GFX_Button::contains(short, short)       D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
@@ -6229,8 +6297,8 @@ Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned cha
 Adafruit_I2CDevice::write_then_read(unsigned char const*, unsigned int, unsigned char*, unsigned int, bool) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp.o
 Adafruit_SPIDevice::Adafruit_SPIDevice(signed char, signed char, signed char, signed char, unsigned long, BitOrder, unsigned char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
-Adafruit_SPIDevice::Adafruit_SPIDevice(signed char, signed char, signed char, signed char, unsigned long, BitOrder, unsigned char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+Adafruit_SPIDevice::Adafruit_SPIDevice(signed char, signed char, signed char, signed char, unsigned long, BitOrder, unsigned char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
 Adafruit_SPIDevice::Adafruit_SPIDevice(signed char, unsigned long, BitOrder, unsigned char, SPIClass*) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
 Adafruit_SPIDevice::Adafruit_SPIDevice(signed char, unsigned long, BitOrder, unsigned char, SPIClass*) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
@@ -6251,8 +6319,8 @@ Adafruit_SPIDevice::write_and_read(unsigned char*, unsigned int) D:\Moji projekt
 Adafruit_SPIDevice::write_then_read(unsigned char const*, unsigned int, unsigned char*, unsigned int, unsigned char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp.o
 Adafruit_SPIDevice::~Adafruit_SPIDevice()         D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
-                                                  D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
 Adafruit_SPIDevice::~Adafruit_SPIDevice()         D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
 Adafruit_SPITFT::Adafruit_SPITFT(unsigned short, unsigned short, SPIClass*, signed char, signed char, signed char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
 Adafruit_SPITFT::Adafruit_SPITFT(unsigned short, unsigned short, SPIClass*, signed char, signed char, signed char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
 Adafruit_SPITFT::Adafruit_SPITFT(unsigned short, unsigned short, signed char, signed char, signed char) D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
@@ -7119,11 +7187,16 @@ LL_USART_StructInit                               D:\Moji projekti\PCD8544\build
 LL_mDelay                                         D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\LL\stm32yyxx_ll_utils.c.o
 MemManage_Handler                                 D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
 NMI_Handler                                       D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
-PCD8544_LCD::PCD8544_LCD()                        D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+PCD8544_LCD::LCDreset()                           D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 PCD8544_LCD::PCD8544_LCD()                        D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
                                                   D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+PCD8544_LCD::PCD8544_LCD()                        D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 PCD8544_LCD::begin(int, int, int)                 D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
                                                   D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+PCD8544_LCD::display()                            D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+PCD8544_LCD::drawPixel(short, short, unsigned short) D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
+PCD8544_LCD::spi_send(unsigned char*)             D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 PVD_IRQHandler                                    D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
 PendSV_Handler                                    D:\Moji projekti\PCD8544\build\core\core.a(startup_stm32yyxx.S.o)
 PinMap_ADC                                        D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
@@ -7156,24 +7229,27 @@ PinMap_UART_RX                                    D:\Moji projekti\PCD8544\build
 PinMap_UART_TX                                    D:\Moji projekti\PCD8544\build\core\PeripheralPins.c.o
                                                   D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\uart.c.o
-Print::availableForWrite()                        D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+Print::availableForWrite()                        D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
                                                   D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
-Print::flush()                                    D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+Print::flush()                                    D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
                                                   D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 Print::print(Printable const&)                    D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
 Print::print(String const&)                       D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
 Print::print(__FlashStringHelper const*)          D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
 Print::print(char const*)                         D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
 Print::print(char)                                D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
 Print::print(double, int)                         D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
 Print::print(float, int)                          D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
@@ -7213,6 +7289,7 @@ Print::write(unsigned char const*, unsigned int)  D:\Moji projekti\PCD8544\build
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 RCC_GetHCLKClockFreq                              D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\LL\stm32yyxx_ll_rcc.c.o
 RCC_GetPCLK1ClockFreq                             D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\LL\stm32yyxx_ll_rcc.c.o
 RCC_GetPCLK2ClockFreq                             D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\LL\stm32yyxx_ll_rcc.c.o
@@ -7629,9 +7706,9 @@ __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*,
 __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
                                                   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(si_class_type_info.o)
 __cxxabiv1::__class_type_info::~__class_type_info() c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
+__cxxabiv1::__class_type_info::~__class_type_info() c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
+__cxxabiv1::__class_type_info::~__class_type_info() c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
                                                   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(si_class_type_info.o)
-__cxxabiv1::__class_type_info::~__class_type_info() c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
-__cxxabiv1::__class_type_info::~__class_type_info() c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
 __cxxabiv1::__forced_unwind::~__forced_unwind()   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
 __cxxabiv1::__forced_unwind::~__forced_unwind()   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
 __cxxabiv1::__forced_unwind::~__forced_unwind()   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
@@ -8022,6 +8099,8 @@ configIPClock                                     D:\Moji projekti\PCD8544\build
 delay                                             D:\Moji projekti\PCD8544\build\core\core.a(wiring_time.c.o)
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.ino.cpp.o
+                                                  D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 digitalPin                                        D:\Moji projekti\PCD8544\build\core\variant_BLUEBUTTON_F103RxT.cpp.o
                                                   D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
                                                   D:\Moji projekti\PCD8544\build\core\core.a(wiring_analog.c.o)
@@ -8359,8 +8438,8 @@ std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::_Any_data> >, s
 std::exception::what() const                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
 std::exception::~exception()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
 std::exception::~exception()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
-std::exception::~exception()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
                                                   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(functional.o)
+std::exception::~exception()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(eh_exception.o)
 std::function<void ()>::function()                D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
                                                   D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\HardwareTimer.cpp.o
 std::function<void ()>::function()                D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o
@@ -8386,8 +8465,8 @@ std::type_info::operator==(std::type_info const&) const c:/users/marina/appdata/
                                                   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(si_class_type_info.o)
 std::type_info::~type_info()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(tinfo.o)
 std::type_info::~type_info()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(tinfo.o)
-std::type_info::~type_info()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(tinfo.o)
                                                   c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(class_type_info.o)
+std::type_info::~type_info()                      c:/users/marina/appdata/local/arduino15/packages/stmicroelectronics/tools/xpack-arm-none-eabi-gcc/12.2.1-1.2/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libstdc++_nano.a(tinfo.o)
 stm32_interrupt_disable(GPIO_TypeDef*, unsigned short) D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
 stm32_interrupt_enable(GPIO_TypeDef*, unsigned short, std::function<void ()>, unsigned long) D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
 stm32_interrupt_enable(GPIO_TypeDef*, unsigned short, void (*)(), unsigned long) D:\Moji projekti\PCD8544\build\libraries\SrcWrapper\stm32\interrupt.cpp.o
@@ -8496,6 +8575,7 @@ vtable for GFXcanvas1                             D:\Moji projekti\PCD8544\build
 vtable for GFXcanvas16                            D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 vtable for GFXcanvas8                             D:\Moji projekti\PCD8544\build\libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp.o
 vtable for HardwareSerial                         D:\Moji projekti\PCD8544\build\core\core.a(HardwareSerial.cpp.o)
+vtable for PCD8544_LCD                            D:\Moji projekti\PCD8544\build\sketch\PCD8544.cpp.o
 vtable for Print                                  D:\Moji projekti\PCD8544\build\core\core.a(Print.cpp.o)
 vtable for Stream                                 D:\Moji projekti\PCD8544\build\core\core.a(Stream.cpp.o)
 vtable for TwoWire                                D:\Moji projekti\PCD8544\build\libraries\Wire\Wire.cpp.o

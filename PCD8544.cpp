@@ -1,6 +1,7 @@
 
 #include "PCD8544.h"
 #include "Adafruit_GFX.h"
+#include "SPI.h"
 
 PCD8544_LCD::PCD8544_LCD() : Adafruit_GFX(rows, columns)
 {
@@ -17,19 +18,18 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
   pinMode(_SCE, OUTPUT);
   pinMode(_DC, OUTPUT);
   pinMode(_RST, OUTPUT);
-
+  SPI.begin();
+  LCDreset();
  // digitalWrite(_SCE, HIGH); // CS pin must be HIGH when the SPI can be initialized
   digitalWrite(_DC, LOW);
   for (int i = 0; i < 8; i++)
   {
-    digitalWrite(_SCE, HIGH);
     uint8_t _lcdstart[2] = {PCD8544_LCD_CMD_SETX, PCD8544_LCD_CMD_SETY};
     spi_send(_lcdstart, 2);
 
   }
-
-  LCDreset();
-  digitalWrite(_DC, HIGH);
+  
+  
 
   uint8_t lcdBS = PCD8544_LCD_CMD_BS;
   spi_send(&lcdBS,1);
@@ -73,10 +73,16 @@ void PCD8544_LCD::drawPixel(int16_t x, int16_t y, uint16_t color)
 
 void PCD8544_LCD::spi_send(uint8_t *_data, uint16_t _n)
 {
-  digitalWrite(_SCE, HIGH);
-  SPI.beginTransaction(_setLCD);
-  SPI.endTransaction();
   digitalWrite(_SCE, LOW);
+  SPI.beginTransaction(_setLCD);
+
+  for (int i = 0; i < _n; i++)
+  {
+    SPI.transfer(_data[i]);
+  }
+  
+  SPI.endTransaction();
+  digitalWrite(_SCE, HIGH);
 }
 
 void PCD8544_LCD::LCDreset()

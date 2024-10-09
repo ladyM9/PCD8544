@@ -22,17 +22,20 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
   LCDreset();
  // digitalWrite(_SCE, HIGH); // CS pin must be HIGH when the SPI can be initialized
   digitalWrite(_DC, LOW);
-  for (int i = 0; i < 8; i++)
-  {
-    uint8_t _lcdstart[2] = {PCD8544_LCD_CMD_SETX, PCD8544_LCD_CMD_SETY};
-    spi_send(_lcdstart, 2);
+  uint8_t function_s = PCD8544_LCD_CMD_FS1;
+  spi_send(&function_s, 1);
 
-  }
+ // for (int i = 0; i < 8; i++)
+ // {
+   // uint8_t _lcdstart[2] = {PCD8544_LCD_CMD_SETX, PCD8544_LCD_CMD_SETY};
+   // spi_send(_lcdstart, 2);
+
+ // }
   
   
 
-  uint8_t lcdBS = PCD8544_LCD_CMD_BS;
-  spi_send(&lcdBS,1);
+ // uint8_t lcdBS = PCD8544_LCD_CMD_BS;
+ // spi_send(&lcdBS,1);
 
   display();
 }
@@ -43,11 +46,8 @@ void PCD8544_LCD::display()
   {
     digitalWrite(_DC, LOW);
 
-    uint8_t function_s = PCD8544_LCD_CMD_FS1;
-    spi_send(&function_s, 1);
-
-    uint8_t wd = PCD8544_LCD_CMD_WD;
-    spi_send(&wd, 1);
+    uint8_t display_control = PCD8544_LCD_CMD_DISPC;
+    spi_send(&display_control, 1);
 
     uint8_t set_Y = PCD8544_LCD_CMD_SETY;
     spi_send(&set_Y, 1);

@@ -9,13 +9,13 @@
 
 //registers for LCD
 
-#define PCD8544_LCD_CMD_FS1 0b00100000
-#define PCD8544_LCD_CMD_FS2 0b00100001
-#define PCD8544_LCD_CMD_WD 0b00001111
+#define PCD8544_LCD_CMD_FS1 0b00100000 //chip is active
+#define PCD8544_LCD_CMD_FS2 0b00100100 //after reset
+#define PCD8544_LCD_CMD_WD 0b00100001
 #define PCD8544_LCD_CMD_BS 0b00000011
 #define PCD8544_LCD_CMD_TEMPC 0b00000101
 #define PCD8544_LCD_CMD_VOP 0b10010000
-#define PCD8544_LCD_CMD_DISPC 0b00001001
+#define PCD8544_LCD_CMD_DISPC 0b00001100
 #define PCD8544_LCD_CMD_SETY 0b01000000
 #define PCD8544_LCD_CMD_SETX 0b10000000
 
@@ -37,6 +37,7 @@ class PCD8544_LCD : public Adafruit_GFX
     void display(); //method for print anything on LCD
     void spi_send(uint8_t *_lcd, uint16_t _n);
     void writedata_functionset();
+    void writedata_functionset2();
     void Contrast(uint8_t contrast);
 
     private:
@@ -51,5 +52,6 @@ class PCD8544_LCD : public Adafruit_GFX
     int _RST = 0;
 
     uint8_t rotation;
+    
 };
 #endif

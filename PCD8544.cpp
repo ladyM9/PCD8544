@@ -24,6 +24,8 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
   digitalWrite(_DC, LOW);
   uint8_t function_s = PCD8544_LCD_CMD_FS1;
   spi_send(&function_s, 1);
+  uint8_t write_data = PCD8544_LCD_CMD_WD;
+  spi_send(&write_data,1);
 
  // for (int i = 0; i < 8; i++)
  // {

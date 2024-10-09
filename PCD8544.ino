@@ -12,8 +12,9 @@ void setup()
 	//display_lcd.setTextColor(0xFFFFFF, 0x000000);
 	display_lcd.setTextColor(1,0);
 	display_lcd.setTextSize(2);
-	display_lcd.setCursor(20,20);
+	display_lcd.setCursor(10,20);
 	display_lcd.Contrast(60);
+	display_lcd.print("Hello");
 	//display_lcd.display();
 
 
@@ -25,4 +26,3 @@ void loop()
 	//display_lcd.display();
 
 }
-

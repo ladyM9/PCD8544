@@ -22,9 +22,9 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
   LCDreset();
  // digitalWrite(_SCE, HIGH); // CS pin must be HIGH when the SPI can be initialized
   digitalWrite(_DC, LOW);
-  uint8_t function_s = PCD8544_LCD_CMD_FS1;
+  uint8_t function_s = PCD8544_LCD_CMD_FS1; //send function set to spi
   spi_send(&function_s, 1);
-  uint8_t write_data = PCD8544_LCD_CMD_WD;
+  uint8_t write_data = PCD8544_LCD_CMD_WD; //send write data to spi
   spi_send(&write_data,1);
 
  // for (int i = 0; i < 8; i++)
@@ -44,9 +44,9 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
 
 void PCD8544_LCD::display()
 {
-  for (int i = 0; i < 8; i++)
+  for (int i = 0; i < 8; i++) //if function set 1 these registers has on send to spi
   {
-    digitalWrite(_DC, LOW);
+    digitalWrite(_DC, LOW); //_DC must be LOW(datasheet)
 
     uint8_t display_control = PCD8544_LCD_CMD_DISPC;
     spi_send(&display_control, 1);
@@ -76,11 +76,11 @@ void PCD8544_LCD::drawPixel(int16_t x, int16_t y, uint16_t color)
 void PCD8544_LCD::spi_send(uint8_t *_data, uint16_t _n)
 {
   digitalWrite(_SCE, LOW);
-  SPI.beginTransaction(_setLCD);
+  SPI.beginTransaction(_setLCD); //start the comunication with LCD
 
   for (int i = 0; i < _n; i++)
   {
-    SPI.transfer(_data[i]);
+    SPI.transfer(_data[i]); //transfer data between display and controller
   }
   
   SPI.endTransaction();

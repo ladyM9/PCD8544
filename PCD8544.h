@@ -4,18 +4,19 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <Adafruit_GFX.h>
-#define rows 48
-#define columns 84
+#define height 48
+#define width 84
+#define BUFFER (height*width/8)
 
 //registers for LCD
 
 #define PCD8544_LCD_CMD_FS1 0b00100000 //chip is active
 #define PCD8544_LCD_CMD_FS2 0b00100100 //after reset
-#define PCD8544_LCD_CMD_WD 0b00000101
+#define PCD8544_LCD_CMD_WD 0b00100000
 #define PCD8544_LCD_CMD_BS 0b00000011
 #define PCD8544_LCD_CMD_TEMPC 0b00000101
 #define PCD8544_LCD_CMD_VOP 0b10010000
-#define PCD8544_LCD_CMD_DISPC 0b00001100
+#define PCD8544_LCD_CMD_DISPC 0b00001001
 #define PCD8544_LCD_CMD_SETY 0b01000000
 #define PCD8544_LCD_CMD_SETX 0b10000000
 
@@ -39,12 +40,14 @@ class PCD8544_LCD : public Adafruit_GFX
     void writedata_functionset();
     void writedata_functionset2();
     void Contrast(uint8_t contrast);
+    void clearDisplay();
 
     private:
     void LCDreset();
+    void initLCD();
     SPISettings _setLCD;
 
-    uint8_t _lcdFramebuffer[columns*rows/8];
+    uint8_t _lcdFramebuffer[width*height/8] = {0};
     
 
     int _DC = 0;

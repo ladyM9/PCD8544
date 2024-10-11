@@ -1,6 +1,7 @@
 #include "PCD8544.h"
 #include <Arduino.h>
 
+
 #define _SCEPIN PA1
 #define _DCPIN PA0
 #define _RSTPIN PA4
@@ -10,19 +11,18 @@ void setup()
 {
 	display_lcd.begin(_SCEPIN , _DCPIN, _RSTPIN);
 	//display_lcd.setTextColor(0xFFFFFF, 0x000000);
-	display_lcd.setTextColor(1,0);
-	display_lcd.setTextSize(2);
-	display_lcd.setCursor(10,20);
-	display_lcd.Contrast(60);
-	display_lcd.print("Hello");
-	//display_lcd.display();
+
+	display_lcd.display();
+	delay(5000);
+	display_lcd.clearDisplay();
+
 
 
 }
 
 void loop()
 {
-	display_lcd.print("Hello");
-	//display_lcd.display();
+	display_lcd.drawPixel(5,5,1);
+	display_lcd.display();
 
 }

@@ -3,7 +3,7 @@
 #include "Adafruit_GFX.h"
 #include "SPI.h"
 
-PCD8544_LCD::PCD8544_LCD() : Adafruit_GFX(rows, columns)
+PCD8544_LCD::PCD8544_LCD() : Adafruit_GFX(width, height)
 {
 }
 
@@ -24,22 +24,17 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
   digitalWrite(_DC, LOW);
   uint8_t function_s = PCD8544_LCD_CMD_FS1; //send function set to spi
   spi_send(&function_s, 1);
-  uint8_t write_data = PCD8544_LCD_CMD_WD; //send write data to spi
-  spi_send(&write_data,1);
+  uint8_t function_s1 = PCD8544_LCD_CMD_FS2;
+  spi_send(&function_s1,1);
 
- // for (int i = 0; i < 8; i++)
- // {
-   // uint8_t _lcdstart[2] = {PCD8544_LCD_CMD_SETX, PCD8544_LCD_CMD_SETY};
-   // spi_send(_lcdstart, 2);
 
- // }
-  
-  
-
- // uint8_t lcdBS = PCD8544_LCD_CMD_BS;
- // spi_send(&lcdBS,1);
+   digitalWrite(_DC, HIGH);
 
   display();
+
+  initLCD();
+
+
 }
 
 void PCD8544_LCD::display()
@@ -56,21 +51,40 @@ void PCD8544_LCD::display()
 
     uint8_t set_X = PCD8544_LCD_CMD_SETX;
     spi_send(&set_X, 1);
+
+   
     spi_send(_lcdFramebuffer + (i * 98), 98);
 
     digitalWrite(_DC, LOW);
   }
 }
 
+void PCD8544_LCD::initLCD()
+{
+
+  uint8_t bias = PCD8544_LCD_CMD_BS;
+  spi_send(&bias,1);
+
+  uint8_t temp_control = PCD8544_LCD_CMD_TEMPC;
+  spi_send(&temp_control, 1);
+
+  uint8_t vop = PCD8544_LCD_CMD_VOP;
+  spi_send(&vop,1);
+
+  
+
+
+}
+
 void PCD8544_LCD::drawPixel(int16_t x, int16_t y, uint16_t color)
 {
-  if ((x > rows - 1) || x < 0)
-    return;
-  if ((y > columns - 1) || y < 0)
+     if ((x < 0) || (x >= width) || (y < 0) || (y >= height))
     return;
 
-     _lcdFramebuffer[x + ((y / 8) * 98)] &= ~(1 << (y % 8));
-    _lcdFramebuffer[x + ((y / 8) * 98)] |= (color << (y % 8));
+    if (color)
+    _lcdFramebuffer[x + (y / 8) * width] |= 1 << (y % 8);
+  else
+    _lcdFramebuffer[x + (y / 8) * width] &= ~(1 << (y % 8));
 }
 
 void PCD8544_LCD::spi_send(uint8_t *_data, uint16_t _n)
@@ -98,27 +112,17 @@ void PCD8544_LCD::LCDreset()
   delay(100);
 }
 
-void PCD8544_LCD::writedata_functionset()
-{
-  uint8_t wsfs = PCD8544_LCD_CMD_FS2;
-  spi_send(&wsfs, 1);
-
-  uint8_t tempc = PCD8544_LCD_CMD_TEMPC;
-  spi_send(&tempc, 1);
-
-  uint8_t vop = PCD8544_LCD_CMD_VOP;
-  spi_send(&vop, 1);
-
-  uint8_t bias = PCD8544_LCD_CMD_BS;
-  spi_send(&bias, 1);
-
-}
 
 void PCD8544_LCD::Contrast(uint8_t contrast)
 {
   
 }
 
+void PCD8544_LCD::clearDisplay()
+{
+  memset(_lcdFramebuffer, 0x00, sizeof(_lcdFramebuffer));
+ // memset(buffer, color ? 0xFF : 0x00, bytes);
+}
 
 
 

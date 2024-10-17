@@ -11,7 +11,7 @@
 //registers for LCD
 
 #define PCD8544_LCD_CMD_FS1 0b00100000 //chip is active
-#define PCD8544_LCD_CMD_FS2 0b00100100 //after reset
+#define PCD8544_LCD_CMD_FS2 0b00100101 //after reset
 #define PCD8544_LCD_CMD_WD 0b00100000
 #define PCD8544_LCD_CMD_BS 0b00000011
 #define PCD8544_LCD_CMD_TEMPC 0b00000101
@@ -22,6 +22,8 @@
 #define PCD8544_LCD_CMD_DISP_INVERSE 0b00001101
 #define PCD8544_LCD_CMD_SETY 0b01000000
 #define PCD8544_LCD_CMD_SETX 0b10000000
+#define PCD8544_LCD_CMD_ADDRX 0b1010011
+
 
 //Class for LCD driver
 #ifndef _swap_int16_t

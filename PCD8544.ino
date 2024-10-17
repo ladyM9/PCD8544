@@ -13,13 +13,13 @@ void setup()
 	display_lcd.begin(_SCEPIN , _DCPIN, _RSTPIN);
 
 	
-
-	//display_lcd.display();
-	delay(5000);
-
-	display_lcd.clearDisplay();
-	delay(5000);
+	display_lcd.drawPixel(5,5,1);
+	display_lcd.drawPixel(20,5,1);
 	display_lcd.display();
+	delay(5000);
+	display_lcd.clearDisplay();
+	
+
 
 
 

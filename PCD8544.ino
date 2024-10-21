@@ -12,12 +12,17 @@ void setup()
 	
 	display_lcd.begin(_SCEPIN , _DCPIN, _RSTPIN);
 
-	
-	display_lcd.drawPixel(5,5,1);
-	display_lcd.drawPixel(20,5,1);
+	display_lcd.Rotation(3);
+	//display_lcd.drawPixel(2,2,1);
+	display_lcd.setCursor(2,2);
+	display_lcd.setTextColor(1);
+	display_lcd.setTextSize(1);
+	display_lcd.print("Hi");
+
 	display_lcd.display();
 	delay(5000);
 	display_lcd.clearDisplay();
+	display_lcd.display();
 	
 
 

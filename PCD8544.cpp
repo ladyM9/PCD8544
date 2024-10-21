@@ -39,7 +39,7 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
 
   uint8_t display_control = PCD8544_LCD_CMD_DISP_NORMAL_MODE;
   spi_send(&display_control, 1);
-  for (int i = 0; i < 5; i++) // if function set 1 these registers has on send to spi
+  for (int i = 0; i < 6; i++) // if function set 1 these registers has on send to spi
   {
     uint8_t set_Y = PCD8544_LCD_CMD_SETY + i;
     spi_send(&set_Y, 1);
@@ -59,7 +59,7 @@ void PCD8544_LCD::begin(int _SCEPIN, int _DCPIN, int _RSTPIN)
 void PCD8544_LCD::display()
 {
 
-  for (int i = 0; i < 5; i++)
+  for (int i = 0; i < 6; i++)
   {
     digitalWrite(_DC, LOW);
 
@@ -69,12 +69,10 @@ void PCD8544_LCD::display()
     uint8_t set_X = PCD8544_LCD_CMD_SETX;
     spi_send(&set_X, 1);
     digitalWrite(_DC, HIGH);
-    spi_send(_lcdFramebuffer + (i  * 84), 84);
+    spi_send(_lcdFramebuffer + (i * 84), 84);
 
     digitalWrite(_DC, LOW);
- 
   }
-
 }
 
 void PCD8544_LCD::initLCD()
@@ -86,10 +84,50 @@ void PCD8544_LCD::drawPixel(int16_t x, int16_t y, uint16_t color)
   if ((x < 0) || (x >= width) || (y < 0) || (y >= height))
     return;
 
-  if (color)
-    _lcdFramebuffer[x + (y / 8) * width] |= 1 << (y % 8);
-  else
-    _lcdFramebuffer[x + (y / 8) * width] &= ~(1 << (y % 8));
+  color &= 1;
+
+  switch (rotation)
+  {
+  case 0: // 1 kvadrant
+    break;
+  case 1: // 2 kvadrant
+
+    _swap_int16_t(x, y);
+    x = width - x - 1;
+
+    break;
+  case 2: // 3 kvadrant
+
+    _swap_int16_t(x, y);
+    x = width - x - 1;
+    y = height - y - 1;
+    break;
+  case 3: // 4 kvadrant
+    _swap_int16_t(x, y);
+    y = height - 1 - y;
+  }
+
+  _lcdFramebuffer[x + ((y / 8) * width)] &= ~(1 << (y % 8));
+  _lcdFramebuffer[x + ((y / 8) * width)] |= (color << (y % 8));
+}
+
+void PCD8544_LCD::Rotation(int _rotation)
+{
+
+  rotation = _rotation % 4;
+  switch (rotation)
+  {
+  case 0:
+    _width = WIDTH;
+    _height = HEIGHT;
+
+    break;
+
+  case 1:
+    _width = HEIGHT;
+    _height = WIDTH;
+    break;
+  }
 }
 
 void PCD8544_LCD::spi_send(uint8_t *_data, uint16_t _n)
@@ -124,6 +162,7 @@ void PCD8544_LCD::Contrast(uint8_t contrast)
 void PCD8544_LCD::clearDisplay()
 {
 
-  memset(_lcdFramebuffer, 0x00, width*height/8);
+  memset(_lcdFramebuffer, 0x00, width * height / 8);
+
   // memset(buffer, color ? 0xFF : 0x00, bytes);
 }

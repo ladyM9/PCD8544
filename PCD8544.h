@@ -41,6 +41,7 @@ class PCD8544_LCD : public Adafruit_GFX
     void begin(int _SCEPIN, int _DCPIN, int _RSTPIN); 
     void drawPixel(int16_t x, int16_t y, uint16_t color); //method for drawPixels on LCD
     void display(); //method for print anything on LCD
+    void Rotation(int _rotation);
     void spi_send(uint8_t *_lcd, uint16_t _n);
     void writedata_functionset();
     void writedata_functionset2();
